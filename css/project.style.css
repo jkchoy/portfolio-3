@@ -711,3 +711,43 @@ figcaption p {
     font-size: 90%;
   }
 }
+
+/* CHRIS's ADJUSTMENTS */
+
+.hardcover_front>li,
+.hardcover_back>li,
+.page>li {
+  overflow: hidden;
+}
+
+.book img,
+.book video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book h2 {
+  margin: .2em 0 0 0;
+  line-height: 1;
+  font-size: 2em;
+}
+
+.book p {
+  margin: .2em 0 0 0;
+  font-size: .9em;
+}
+
+.book .btn {
+  width: 90%;
+}
+
+.book .button {
+  margin-block: 0;
+}
+
+@media screen and (max-width: 37.8125em) {
+  .book {
+    margin-block-end: 300px;
+  }
+}
