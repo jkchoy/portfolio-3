@@ -62,7 +62,7 @@ TABLE OF CONTENTS
   --color-blue-600: #2f455d;
   --color-blue-900: #11212f;
 
-  --color-blue-teal: #006998;
+
 
   /* light background boxes & title heading box*/
   --color-gray-100: #F2F2F2;
@@ -73,7 +73,7 @@ TABLE OF CONTENTS
   --color-gray-600: #808392;
 
 
-  --color-rose-400: #bf8689;
+  --color-rose-400: #a36265;
 
 
   /* DEFINE SEMANTIC COLORS */
@@ -193,7 +193,7 @@ a:hover {
 body {
   font-family: 'elze', sans-serif;
   font-size: 100%;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 h1,
@@ -768,10 +768,10 @@ html {
 
 
 
-body {
-  /* font-family: "Elza", sans-serif; */
+/* body {
+  font-family: "Elza", sans-serif;
   background: var(--color-white);
-}
+} */
 
 * {
   margin: 0;
@@ -790,7 +790,7 @@ body {
   padding-right: 15px;
   overflow: hidden;
   margin-top: 0px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .jkc-main-slider-wrapper {
@@ -814,6 +814,7 @@ body {
 .jkc-main-slider-wrapper .jkc-main-item.swiper-slide-active .jkc-main-desc,
 .jkc-main-slider-wrapper .jkc-main-item.swiper-slide-active .jkc-main-button {
   opacity: 1;
+
 }
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-image-wrap {
