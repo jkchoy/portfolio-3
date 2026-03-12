@@ -52,7 +52,8 @@ TABLE OF CONTENTS
 :root {
 
   /* DEFINE BASE COLORS */
-  --color-white: #f2f2f2;
+  --color-white: #fdfdfd;
+  --color-offwhite: #efefef;
   --color-black: #232323;
   --color-black-80: rgb(0 0 0 / .8);
 
@@ -154,6 +155,7 @@ h3 {
 
   /* ADD SUPPORT FOR TEXTWRAP BALANCE */
   text-wrap: balance;
+
 }
 
 /* LIMIT THE NUMBER OF CHARACTERS PER LINE FOR ALL PARAGRAPHS */
@@ -165,6 +167,7 @@ p {
 p,
 li {
   text-wrap: pretty;
+  font-family: 'elza', sans-serif;
 }
 
 ul {
@@ -191,7 +194,7 @@ a:hover {
 
 /* GLOBAL TYPOHRAPHY */
 body {
-  font-family: 'elze', sans-serif;
+  font-family: 'Elza', sans-serif;
   font-size: 100%;
   line-height: 1.6;
 }
@@ -200,18 +203,18 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'roc-grotesque', sans-serif;
+  font-family: "Roc Grotesque", sans-serif;
 }
 
 /* EYEBROWS/LEAD-INS/RUNNING-HEADS */
 .eyebrow {
   text-transform: uppercase;
   font-size: .8em;
-  letter-spacing: .05em;
-  font-weight: 700;
-  color: var(--color-gray-600);
+  letter-spacing: .07em;
   margin: 0;
-  font-family: 'roc-grotesque', sans-serif;
+  font-family: 'roc-grotesk-wide', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* GLOBAL MEDIA */
@@ -1238,4 +1241,28 @@ html {
   background: var(--color-blue-900);
   transition: all 0.3s ease;
   color: var(--color-white)
+}
+
+
+.site-main.subpage {
+  background-color: var(--color-offwhite);
+  margin: 5em 7em;
+  box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+}
+
+.hero-subpage {
+  padding: 0 4em 6em 4em;
+}
+
+/* .menu-video {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+} */
+
+/* #VIDEO */
+video {
+  max-width: 100%;
+  height: auto;
 }
