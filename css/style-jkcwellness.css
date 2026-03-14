@@ -180,6 +180,14 @@
   color: var(--color-gray-600);
   font-family: roc-grotesk, sans-serif;
   font-style: normal;
+  text-align: left;
+  margin-bottom: .7em;
+}
+
+.eyebrow.subpage.slide {
+  color: var(--color-blue-900);
+
+
 }
 
 .eyebrow.subpage.white-text {
@@ -244,6 +252,7 @@
   font-size: 1.2em;
   letter-spacing: .02em;
   margin-bottom: .3em;
+  text-align: left;
 }
 
 
