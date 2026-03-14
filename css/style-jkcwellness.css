@@ -1,8 +1,10 @@
 :root {
 
   /* DEFINE BASE COLORS */
-  --color-white: #ffffff;
-  --color-offwhite: #e9e8e8;
+  --color-graywhite: #ebeaea;
+  --color-white: #e7e7e7;
+  --color-offwhite: #c8c8c8;
+  --color-whitebox: #fdfdfd;
   --color-black: #232323;
   --color-black-80: rgb(0 0 0 / .8);
 
@@ -15,7 +17,7 @@
   --color-blue-gray: #74799F;
 
   /* light background boxes & title heading box*/
-  --color-gray-100: #F2F2F2;
+  --color-gray-100: #eef1f2;
   /* buttons */
   --color-gray-200: #D9D9D9;
   /* subheader */
@@ -92,12 +94,7 @@
       "wdth" 100,
       "YTLC" 500;
   }
-}
 
-
-
-body {
-  background-color: var(--color-gray-200);
 }
 
 /* .site-main.subpage {
@@ -154,15 +151,7 @@ body {
   font-style: normal;
 }
 
-.hero-subpage-title {
-  font-family: roc-grotesk-wide, sans-serif;
-  font-weight: 400;
-  font-size: bold;
-  text-transform: uppercase;
-  font-size: 3em;
-  line-height: 1.4;
-  margin-top: .4em;
-}
+
 
 .scope {
   font-family: elza, sans-serif;
@@ -171,6 +160,9 @@ body {
   margin-top: .4em;
 } */
 
+.hero-subpage {
+  background-color: var(--color-gray-100);
+}
 
 .case-study {
   margin-top: 0;
@@ -178,8 +170,8 @@ body {
   color: var(--color-black);
   letter-spacing: 2px;
   display: inline-block;
-  border-top: 10px solid var(--color-black);
-  font-family: roc-grotesk-wide, sans-serif;
+  border-top: 10px solid var(--color-blue-gray);
+  font-family: 'roc-grotesk-wide', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -205,7 +197,7 @@ body {
   color: var(--color-white);
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3.5em;
   line-height: 1.4;
   margin-top: .4em;
 }
@@ -222,14 +214,9 @@ body {
 .scope-text {
   text-transform: uppercase;
   letter-spacing: .05em;
+  font-weight: bold;
 }
 
-.white-box.brand-strategy {
-  background-color: var(--color-white);
-  padding: 0 4em 6em 5em;
-  margin: 0;
-  border: 1px solid blue;
-}
 
 .container.subpage {
   margin: 4em;
@@ -240,21 +227,61 @@ body {
 .brandstrategy-title {
   font-family: roc-grotesk-wide, sans-serif;
   font-weight: 400;
-  font-size: bold;
+  font-size: 2.7em;
+  letter-spacing: 5px;
   text-transform: uppercase;
-  font-size: 1.7em;
   line-height: 1.4;
-  margin-top: .4em;
+  margin-bottom: .7em;
+
 }
 
 .subpage-subtitle {
   font-family: roc-grotesk-wide, sans-serif;
   font-weight: 400;
+  font-size: 1.5em;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  margin-top: .4em;
+  letter-spacing: .04em;
+  margin-bottom: .3em;
+
 }
 
+.subpage-subtitle.spacing {
+  padding: 2em 0 .5em 0;
+}
+
+.subpage-text {
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.subpage-caption {
+
+  margin-bottom: .5em;
+
+}
+
+.caption-title {
+  letter-spacing: .02em;
+  margin-bottom: .3em;
+  font-weight: bold;
+
+}
+
+
+
+.subpage-subtitle.assets {
+  padding: 2em 0 .5em 0;
+
+}
+
+.h4-subtitle {
+  font-family: roc-grotesk, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: .02em;
+  margin-bottom: .3em;
+}
 
 
 
@@ -391,4 +418,161 @@ body {
   #dragger {
     width: 10px;
   }
+}
+
+
+.jkc-case-study-top {
+  background-color: var(--color-graywhite);
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: .5fr 1fr 2fr 2fr 2fr;
+  /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
+}
+
+.jkc-running-head {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  z-index: 5;
+}
+
+.jkc-hero-image {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  z-index: 5;
+}
+
+.intro-box {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+  z-index: 5;
+}
+
+.brand-strategy {
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+  z-index: 5;
+
+  padding: 3em;
+}
+
+.jkc-top-image {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  z-index: 5;
+}
+
+.gray-box {
+  grid-column: 1 / 5;
+  grid-row: 4 / 6;
+  background-color: var(--color-whitebox);
+  z-index: 1;
+}
+
+
+/* SWIPER CSS STYLING */
+
+.swiper {
+  padding-block-end: 2rem;
+  text-align: center;
+}
+
+
+.swiper-wrapper {}
+
+/* MOVE SWIPER ARROWS OUTSIDE OF SWIPER */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--color-white);
+  padding: var(--unit-xs);
+  border-radius: 100%;
+}
+
+/* TEMP WAY TO MOVE ARROWS OUTSIDE OF SWIPER */
+.swiper {
+  padding-inline: 50px;
+}
+
+/* TEMP SOLUTION COVERS THE CONTENT WITH A WHITE BG, FIX IN THE FUTURE IF THERE IS TIME */
+.swiper-button-prev {
+  translate: -4px -50%;
+  background-color: var(--color-body-background);
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+}
+
+.swiper-button-next {
+  translate: 4px -50%;
+  background-color: var(--color-body-background);
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  right: 0;
+}
+
+/* REMOVE COLOR CARD WIDTHS AND HEIGHTS WHEN INSIDE A SWIPER SLIDE */
+.swiper-slide .card {
+  display: block;
+}
+
+.swiper-slide .color-swatch {
+  width: 100%;
+  min-height: 150px;
+}
+
+
+
+.
+
+/* CARDS HOVER */
+.image-hover {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.overlay {
+  position: absolute;
+  /* padding-bottom: 1em; */
+  bottom: 0;
+  background: #fff;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  font-size: .7em;
+  text-align: center;
+
+}
+
+.overlay a {
+  text-decoration: none;
+}
+
+.overlay h4 {
+  color: var(--color-links);
+}
+
+
+.overlay h4:hover {
+  color: var(--color-links-hover);
+}
+
+.image-hover:hover .overlay {
+  opacity: 4;
 }

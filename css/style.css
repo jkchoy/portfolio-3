@@ -52,8 +52,8 @@ TABLE OF CONTENTS
 :root {
 
   /* DEFINE BASE COLORS */
-  --color-white: #fdfdfd;
-  --color-offwhite: #efefef;
+  --color-white: #e3e3e3;
+  --color-offwhite: #efeded;
   --color-black: #232323;
   --color-black-80: rgb(0 0 0 / .8);
 
@@ -1245,8 +1245,14 @@ html {
 
 
 .site-main.subpage {
-  background-color: var(--color-offwhite);
-  margin: 5em 7em;
+  background-color: var(--color-body-background);
+  padding: 5em;
+
+}
+
+.paper {
+  max-width: 1500px;
+  margin-inline: auto;
   box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
 }
 
