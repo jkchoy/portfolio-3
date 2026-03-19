@@ -26,6 +26,8 @@
 
   --color-salmon: #f6a68d;
 
+  --color-pink: #FFBDC4;
+
   --color-rose-400: #a36265;
 
 
@@ -105,11 +107,11 @@
 
 .case-study {
   margin-top: 0;
-  padding: 0 10px 70px 10px;
+  /* padding: 0 10px 70px 10px; */
   color: var(--color-black);
   letter-spacing: 2px;
-  display: inline-block;
-  border-top: 10px solid var(--color-salmon);
+  /* display: inline-block; */
+  border-top: 10px solid var(--color-pink);
   font-family: 'roc-grotesk-wide', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -125,7 +127,7 @@
 
 .intro-box {
   /* display: inline-block; */
-  background-color: var(--color-salmon);
+  background-color: var(--color-pink);
   color: var(--color-black);
   padding: 2em;
   /* margin: 2em 0; */
@@ -425,7 +427,7 @@
   margin-top: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--color-salmon);
+  background-color: var(--color-pink);
   color: var(--color-black);
   letter-spacing: 2px;
   /* display: inline; */
@@ -518,20 +520,4 @@
 .swiper-slide .color-swatch {
   width: 100%;
   min-height: 150px;
-}
-
-
-.container-img {
-  /* padding-bottom: 1.5em; */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.book-titles {
-  font-family: 'roc-grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  margin: 1.5em 0 .5em 0;
-  text-align: left;
 }
