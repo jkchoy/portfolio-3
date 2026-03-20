@@ -26,11 +26,7 @@
 
   --color-salmon: #f6a68d;
 
-  --color-pink: #FFBDC4;
-
   --color-rose-400: #a36265;
-
-  --color-brown: #5C3E35;
 
 
   /* DEFINE SEMANTIC COLORS */
@@ -107,17 +103,17 @@
   background-color: var(--color-gray-100);
 }
 
-/* .case-study {
+.case-study {
   margin-top: 0;
   padding: 0 10px 70px 10px;
-  color: var(--color-white);
+  color: var(--color-black);
   letter-spacing: 2px;
   display: inline-block;
-  border-top: 10px solid var(--color-brown);
+  border-top: 10px solid var(--color-salmon);
   font-family: 'roc-grotesk-wide', sans-serif;
   font-weight: 500;
   font-style: normal;
-} */
+}
 
 
 .hero-subpage-content {
@@ -129,15 +125,15 @@
 
 .intro-box {
   /* display: inline-block; */
-  background-color: var(--color-brown);
-  color: var(--color-white);
+  background-color: var(--color-salmon);
+  color: var(--color-black);
   padding: 2em;
   /* margin: 2em 0; */
 }
 
 .hero-subpage-title {
   font-family: 'roc-grotesk-wide', sans-serif;
-  color: var(--color-white);
+  color: var(--color-black);
   font-weight: 500;
   text-transform: uppercase;
   font-size: 3.5em;
@@ -182,7 +178,7 @@
   text-transform: uppercase;
   font-size: .9em;
   letter-spacing: .05em;
-  color: var(--color-white);
+  color: var(--color-black);
   font-family: roc-grotesk, sans-serif;
   font-style: normal;
   text-align: left;
@@ -429,8 +425,8 @@
   margin-top: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--color-brown);
-  color: var(--color-white);
+  background-color: var(--color-salmon);
+  color: var(--color-black);
   letter-spacing: 2px;
   /* display: inline; */
   /* border: 1px solid red; */
@@ -524,7 +520,18 @@
   min-height: 150px;
 }
 
+
 .container-img {
   /* padding-bottom: 1.5em; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-titles {
+  font-family: 'roc-grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 1.5em 0 .5em 0;
+  text-align: left;
 }
