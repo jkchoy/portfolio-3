@@ -429,10 +429,10 @@
   margin-top: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--color-brown);
-  color: var(--color-white);
+  color: var(--color-brown);
+  border-top: 15px solid var(--color-brown);
   letter-spacing: 2px;
-  /* display: inline; */
+  display: inline;
   /* border: 1px solid red; */
 
 }

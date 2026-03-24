@@ -24,6 +24,7 @@
   --color-gray-300: #b3b0b0ec;
   --color-gray-600: #808392;
 
+  --color-pink-ffg: #D6066B;
 
   --color-rose-400: #a36265;
 
@@ -124,7 +125,7 @@
 
 .intro-box {
   /* display: inline-block; */
-  background-color: var(--color-blue-gray);
+  background-color: var(--color-pink-ffg);
   color: var(--color-white);
   padding: 2em;
   /* margin: 2em 0; */
@@ -404,7 +405,7 @@
 }
 
 .text.section-wireframes {
-  background-color: var(--color-paleblue-GM);
+  background-color: var(--color-pink-ffg);
   color: var(--color-blue-GM);
   /* padding: 2em; */
   /* margin-left: -90px;
@@ -432,8 +433,8 @@
   margin-top: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--color-blue-gray);
-  color: var(--color-white);
+  border-top: 15px solid var(--color-pink-ffg);
+  color: var(--color-black);
   letter-spacing: 2px;
   /* display: inline; */
   /* border: 1px solid red; */
