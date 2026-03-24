@@ -460,9 +460,9 @@
 }
 
 .gray-box {
-  grid-column: 1 / 4;
-  grid-row: 4 / 6;
   background-color: var(--color-whitebox);
+  grid-column: 1 / 4;
+  grid-row: 3 / 6;
   z-index: 3;
   border: 1px solid rebeccapurple;
 }

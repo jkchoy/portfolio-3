@@ -320,8 +320,8 @@
 
 #gallery {
   position: relative;
-  width: 700px;
-  height: 950px;
+  width: 600px;
+  height: 850px;
   /* max-width: 1000px; */
   /* aspect-ratio: 1000/700; */
   overflow: hidden;
@@ -527,8 +527,8 @@
 
 #gallery-web {
   position: relative;
-  width: 700px;
-  height: 950px;
+  width: 600px;
+  height: 850px;
   /* max-width: 1000px; */
   /* aspect-ratio: 1000/700; */
   overflow: hidden;

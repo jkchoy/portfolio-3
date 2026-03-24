@@ -673,7 +673,7 @@ html {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: #ab5e82;
+  color: var(--color-teal);
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -705,7 +705,7 @@ html {
 }
 
 .footer .col ul li a:hover {
-  color: #ab5e82;
+  color: var(--color-teal);
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -1226,8 +1226,8 @@ html {
 }
 
 .button {
-  background: var(--color-rose-400);
-  padding: 18px 20px;
+  background: var(--color-teal);
+  padding: 10px 15px;
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1255,6 +1255,17 @@ html {
   max-width: 1500px;
   margin-inline: auto;
   box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+}
+
+@media (width < 768px) {
+
+  .paper {
+    max-width: 1000px;
+    margin-inline: auto;
+    box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+    border: 1px solid red;
+  }
+
 }
 
 
