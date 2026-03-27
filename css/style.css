@@ -1247,25 +1247,38 @@ html {
 
 .site-main.subpage {
   background-color: var(--color-body-background);
-  padding: 5em;
+  padding: 3em 5em;
   /* background-color: pink; */
 }
 
 .paper {
-  max-width: 1500px;
+  max-width: 2000px;
   margin-inline: auto;
   box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+  /* border: 1px solid blue; */
 }
 
 @media (width < 768px) {
-
-  .paper {
-    max-width: 1000px;
-    margin-inline: auto;
-    box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
-    border: 1px solid red;
+  .site-main.subpage {
+    /* background-color: var(--color-body-background); */
+    padding: 6em .5em;
+    /* background-color: pink; */
   }
 
+  .paper {
+    width: 100%;
+    margin-inline: auto;
+    box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+    /* border: 1px solid red; */
+  }
+
+}
+
+@media (width < 1400px) {
+
+  .paper {
+    padding-bottom: 5em;
+  }
 }
 
 
