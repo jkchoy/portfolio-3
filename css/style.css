@@ -852,7 +852,7 @@ html {
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-title {
   font-weight: 700;
-  color: var(--color-rose-400);
+  color: var(--color-teal);
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -881,7 +881,7 @@ html {
 }
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-button .link:hover {
-  color: var(--color-rose-400);
+  color: var(--color-teal);
 }
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-button .link--arrowed {
@@ -915,7 +915,7 @@ html {
 }
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-button .link--arrowed:hover g {
-  color: var(--color-rose-400);
+  color: var(--color-teal);
 }
 
 .jkc-main-slider-wrapper .upk-page-scroll {
@@ -946,7 +946,7 @@ html {
   top: -100%;
   width: 100%;
   height: 100%;
-  background: var(--color-rose-400);
+  background: var(--color-teal);
   position: absolute;
   display: block;
   z-index: 0;
@@ -1036,7 +1036,7 @@ html {
 }
 
 .jkc-main-slider-wrapper .jkc-main-navigation .link--arrowed:hover g {
-  color: var(--color-rose-400);
+  color: var(--color-teal);
 }
 
 .jkc-main-slider-wrapper .jkc-main-navigation .jkc-main-button-next {
@@ -1114,7 +1114,7 @@ html {
 }
 
 .jkc-main-slider-wrapper .jkc-main-pagi-wrap .swiper-pagination-bullet-active .svg__circle {
-  stroke: var(--color-rose-400);
+  stroke: var(--color-teal);
   stroke-dasharray: 75;
   stroke-dashoffset: 0;
   -webkit-animation: progress 4s ease-in-out 1 forwards;
@@ -1123,7 +1123,7 @@ html {
 
 .jkc-main-slider-wrapper .jkc-main-pagi-wrap .swiper-pagination-bullet-active .svg__circle-inner {
   fill: var(--color-white);
-  stroke: var(--color-rose-400);
+  stroke: var(--color-teal);
 }
 
 @media (min-width: 768px) {
