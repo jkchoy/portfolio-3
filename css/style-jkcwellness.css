@@ -349,7 +349,7 @@
 
 .img-caption,
 .h4-subtitle.packaging {
-  padding-left: 5em;
+  padding: 1em 0 2em 5em;
 }
 
 
@@ -918,7 +918,7 @@
 
     .intro-box {
       grid-column: 4 / 9;
-      grid-row: 10 / 30;
+      grid-row: 10 / 31;
 
       /* display: none; */
     }
@@ -980,7 +980,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: var(--grid-gap);
-      border: 1px solid red;
+      /* border: 1px solid red; */
 
       img {
         width: 100%;
