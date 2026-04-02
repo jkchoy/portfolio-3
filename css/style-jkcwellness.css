@@ -113,16 +113,22 @@
   z-index: 5;
   font-size: 1em;
   margin-top: 0;
-  padding-top: .7em;
-  text-align: center;
+
+  /* text-align: center; */
   text-transform: uppercase;
   font-family: 'roc-grotesk-wide', sans-serif;
-  border-top: 15px solid var(--color-blue-gray);
+
   /* background-color: var(--color-blue-gray); */
   color: var(--color-black);
   letter-spacing: 2px;
   /* display: inline; */
   /* border: 1px solid red; */
+
+  p {
+    display: inline-block;
+    border-top: 15px solid var(--color-blue-gray);
+    padding-top: .7em;
+  }
 
 }
 
@@ -227,8 +233,8 @@
 
 .eyebrow.subpage.slide {
   color: var(--color-blue-900);
-
-
+  /* border: 2px solid red; */
+  font-size: .7em;
 }
 
 .eyebrow.subpage.white-text {
@@ -244,7 +250,7 @@
   text-transform: uppercase;
   line-height: 1.4;
   margin-bottom: .3em;
-  font-size: clamp(1.7em, 2vw, 3.1em);
+  font-size: clamp(1.7em, 2.5vw, 3.1em);
 }
 
 .subpage-subtitle {
@@ -255,7 +261,7 @@
   text-transform: uppercase;
   letter-spacing: .04em;
   margin-bottom: .3em;
-  font-size: clamp(1.3em, 1vw, 1.5em);
+  font-size: clamp(1.1em, 1.8vw, 1.8em);
   /* display: none; */
 }
 
@@ -267,8 +273,8 @@
 .subpage-subtitle.assets.digital::after {
   content: "";
   display: block;
-  width: 320px;
-  height: 5px;
+  width: 280px;
+  height: 2px;
   background-color: var(--color-blue-gray);
 }
 
@@ -301,7 +307,7 @@
   content: "";
   display: block;
   width: 70px;
-  height: 5px;
+  height: 2px;
   background-color: var(--color-blue-gray);
   /* right: 0; */
   /* display: inline-block;
@@ -313,7 +319,7 @@
   content: "";
   display: block;
   width: 185px;
-  height: 5px;
+  height: 2px;
   background-color: var(--color-blue-gray);
 }
 
@@ -321,7 +327,7 @@
   content: "";
   display: block;
   width: 380px;
-  height: 5px;
+  height: 2px;
   background-color: var(--color-blue-gray);
   position: absolute;
 }
@@ -330,12 +336,12 @@
   content: "";
   display: block;
   width: 300px;
-  height: 5px;
+  height: 2px;
   background-color: var(--color-blue-gray);
 }
 
 .h4-subtitle {
-  font-family: roc-grotesk-wide, sans-serif;
+  font-family: 'elza', serif;
   font-weight: lighter;
   text-transform: uppercase;
   /* font-size: 1.2em; */
@@ -343,6 +349,7 @@
   padding: 1.7em 0;
   text-align: left;
   font-size: clamp(1.1em, 1vw, .7em);
+  font-style: italic;
   /* border: 1px solid red; */
 }
 
@@ -352,6 +359,9 @@
   padding: 1em 0 2em 5em;
 }
 
+.h4-subtitle.slide {
+  padding: 0 0 .5em 0;
+}
 
 
 /* .button.jkc-wellness {
@@ -383,7 +393,8 @@
   margin-top: 1em;
 }
 
-#gallery {
+/* ALL GALLERIES */
+.gallery {
   position: relative;
   /* width: 600px; */
   width: auto;
@@ -392,6 +403,14 @@
   /* aspect-ratio: 1000/700; */
   overflow: hidden;
   border: .5px solid #000;
+}
+
+.gallery *::selection {
+  background: transparent;
+}
+
+#gallery {
+  aspect-ratio: 393/852;
 }
 
 .image-compare {
@@ -444,22 +463,6 @@
   z-index: 2;
   transform: translateX(-50%);
   animation: alternatedragger 10s ease-in-out infinite both;
-  /* animation: animatedragger 10s ease-in-out infinite both; */
-}
-
-@keyframes animatedragger {
-  0% {
-    left: 0%;
-  }
-
-  50% {
-    left: 100%;
-  }
-
-  100% {
-    left: 0%;
-  }
-
 }
 
 .caption-container {
@@ -602,15 +605,9 @@
 /* WEBSITE WIREFRAME SLIDER */
 
 #gallery-web {
-  position: relative;
-  /* width: 600px; */
-  width: auto;
-  height: 850px;
-  /* max-width: 1000px; */
-  /* aspect-ratio: 1000/700; */
-  overflow: hidden;
-  border: .5px solid #000;
+  aspect-ratio: 450/700;
 }
+
 
 .image-compare-web {
   width: 100%;
@@ -661,23 +658,33 @@
   cursor: pointer;
   z-index: 2;
   transform: translateX(-50%);
-  /* animation: animatedragger 10s ease-in-out infinite both; */
 }
 
-/* @keyframes animatedragger {
-  0% {
-    left: 0%;
-  }
+/* ADD ANIMATION TO DRAGGERS */
+#dragger-web,
+#dragger {
+  animation: animatedragger 20s ease-in-out infinite both;
+  left: 100%;
+}
 
+@keyframes animatedragger {
   50% {
-    left: 100%;
-  }
-
-  100% {
     left: 0%;
   }
+}
 
-} */
+.after-layer-web,
+.after-layer {
+  animation: animatedraggerImage 20s ease-in-out infinite both;
+  clip-path: inset(0px 0% 0px 0px);
+}
+
+@keyframes animatedraggerImage {
+  50% {
+    clip-path: inset(0px 100% 0px 0px);
+  }
+}
+
 
 .caption-container-web {
   width: 100%;
@@ -753,7 +760,8 @@
     /* background-color: var(--color-paperwhite); */
     display: grid;
     grid-template-columns: 100px 1fr 1fr 100px;
-    grid-template-rows: .2fr .33fr .5fr .7fr 1fr;
+    grid-template-rows: .2fr .33fr .7fr .7fr 1fr;
+    /* border: 5px solid red; */
 
 
     .jkc-running-head {
