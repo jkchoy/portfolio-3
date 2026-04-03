@@ -433,14 +433,18 @@
   z-index: 5;
   font-size: 1em;
   margin-top: 0;
-  text-align: center;
   text-transform: uppercase;
   color: var(--color-brown);
-  border-top: 15px solid var(--color-brown);
+  font-family: 'roc-grotesk-wide', sans-serif;
   letter-spacing: 2px;
   display: inline;
   /* border: 1px solid red; */
 
+  p {
+    display: inline-block;
+    border-top: 15px solid var(--color-brown);
+    padding-top: .7em;
+  }
 }
 
 .jkc-hero-image {
