@@ -444,6 +444,7 @@
     display: inline-block;
     border-top: 15px solid var(--color-brown);
     padding-top: .7em;
+    margin: 0;
   }
 }
 

@@ -27,7 +27,28 @@ a.disabled,
 
 }
 
+.container.projects {
+  margin-top: 5em;
+}
 
+.all-projects {
+  text-align: c/enter;
+  font-size: clamp(2em, 4vw, 4em);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: roc-grotesk-wide, sans-serif;
+  /* border: 1px solid red; */
+  margin-top: 0;
+  letter-spacing: 5px;
+}
+
+.eyebrow.projects {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #8f8c8c;
+  margin-bottom: 0;
+  /* border: 1px solid red; */
+}
 
 
 /* BOOK ANIMATION */
@@ -111,9 +132,9 @@ Table of Contents
   background: #fffbec;
 }
 
-.book_spine li:first-child {
+/* .book_spine li:first-child {
   background: #eee;
-}
+} */
 
 .book_spine li:last-child {
   background: #333;

@@ -426,6 +426,7 @@
     display: inline-block;
     border-top: 15px solid var(--color-whitebox);
     padding-top: .7em;
+    margin: 0;
   }
 }
 

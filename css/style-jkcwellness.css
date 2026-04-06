@@ -130,6 +130,7 @@
     display: inline-block;
     border-top: 15px solid var(--color-blue-gray);
     padding-top: .7em;
+    margin: 0;
   }
 
 }

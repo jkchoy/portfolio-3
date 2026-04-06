@@ -795,6 +795,11 @@ html {
   color: var(--color-white)
 }
 
+.subpage-button {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .site-main.subpage {
   background-color: var(--color-body-background);
@@ -881,6 +886,7 @@ video {
   position: relative;
 }
 
+
 .jkc-main-slider-wrapper .jkc-main-item {
   position: relative;
   display: flex;
@@ -933,9 +939,10 @@ video {
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-title.jackie {
   color: var(--color-gold);
-  font-family: 'roc-grotesk-wide', sans-serif;
-  font-size: 3em;
-  font-weight: 400;
+  font-weight: bold;
+  /* font-family: 'roc-grotesk-wide', sans-serif;
+  font-size: clamp(2em, 3vw, 2.7em);
+  font-weight: 400; */
 }
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-desc {
@@ -1257,7 +1264,8 @@ video {
   }
 
   .jkc-main-slider-wrapper .jkc-main-item .jkc-main-title {
-    font-size: 50px;
+    font-size: clamp(2.5em, 3vw, 2.7em);
+
   }
 
   .jkc-main-slider-wrapper .jkc-main-item .jkc-main-content-wrap {
