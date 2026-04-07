@@ -614,7 +614,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .2fr .35fr .49fr .5fr .2fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: pink;
+    /* background-color: pink; */
   }
 
   .jkc-running-head {
@@ -681,7 +681,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .2fr .26fr .6fr .8fr .2fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 
   .jkc-running-head {
@@ -747,7 +747,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .1fr .2fr .23fr .8fr .2fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: purple;
+    /* background-color: purple; */
   }
 
   .jkc-running-head {
@@ -813,7 +813,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .08fr .25fr .25fr 1fr .1fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: orange;
+    /* background-color: orange; */
   }
 
   .jkc-running-head {
@@ -877,7 +877,7 @@ h3.jkc-kehinde-subtitle {
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
     grid-template-rows: 1em 1em 1em repeat(41, 40px) 1em 1em 1em;
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
 
 
     .jkc-running-head {

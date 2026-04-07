@@ -668,6 +668,11 @@ html {
   padding: 0px 20px 20px 20px;
 }
 
+.footer .col .motion {
+  padding: 0px 20px 20px 25px;
+  border: 1px solid green;
+}
+
 .footer .col h1 {
   margin: 0;
   padding: 0;
@@ -676,10 +681,10 @@ html {
   line-height: 17px;
   padding: 20px 0px 5px 0px;
   color: var(--color-teal);
-  font-weight: normal;
+  font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 0.250em;
-
+  font-family: 'roc-grotesk-wide', sans-serif;
 }
 
 .footer .col ul {
@@ -692,13 +697,14 @@ html {
   color: #999999;
   font-size: 14px;
   font-family: 'elze', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   padding: 5px 0px 5px 0px;
   cursor: pointer;
   transition: .2s;
   -webkit-transition: .2s;
   -moz-transition: .2s;
   text-decoration: none;
+  font-family: 'roc-grotesk', sans-serif;
 }
 
 .social ul li a {
@@ -786,7 +792,8 @@ html {
   text-decoration: none;
   font-weight: 700;
   font-size: 15px;
-  color: var(--color-white)
+  color: var(--color-white);
+  font-family: 'roc-grotesque-wide', sans-serif;
 }
 
 .button:hover {
