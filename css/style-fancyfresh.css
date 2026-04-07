@@ -181,7 +181,8 @@
   text-transform: uppercase;
   font-size: .9em;
   letter-spacing: .05em;
-  color: var(--color-gray-600);
+  color: var(--color-black);
+  opacity: .8;
   font-family: roc-grotesk, sans-serif;
   font-style: normal;
   text-align: left;

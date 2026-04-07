@@ -167,7 +167,8 @@
   text-transform: uppercase;
   font-size: .9em;
   letter-spacing: .05em;
-  color: var(--color-gray-300);
+  color: var(--color-black);
+  opacity: .8;
   font-family: roc-grotesk, sans-serif;
   font-style: normal;
   text-align: left;
@@ -178,6 +179,10 @@
   color: var(--color-blue-900);
 
 
+}
+
+.eyebrow.subpage.white-text {
+  color: var(--color-white);
 }
 
 
