@@ -63,7 +63,7 @@ TABLE OF CONTENTS
   /* main blue */
   --color-blue-600: #2f455d;
   --color-blue-900: #11212f;
-
+  --color-blue-GM: #043170;
   --color-teal: #2db6b8;
 
   /* light background boxes & title heading box*/
@@ -74,7 +74,7 @@ TABLE OF CONTENTS
   --color-gray-300: #b3b0b0ec;
   --color-gray-600: #808392;
 
-
+  --color-pink: #c75c7e;
   --color-rose-400: #663655;
 
   --color-gold: #D8A008;
@@ -169,6 +169,7 @@ p {
 /* REMOVE WIDOWS FOR ALL PARAGRAPHS AND LIST ITEMS*/
 p,
 li {
+  max-inline-size: 66ch;
   text-wrap: pretty;
   font-family: 'elza', sans-serif;
 }
@@ -310,7 +311,7 @@ html {
 /* CONTAINER */
 
 .container {
-  max-width: var(--container-width);
+  /* max-width: var(--container-width); */
   margin-inline: auto;
   padding-inline: var(--unit-s);
 }
@@ -871,7 +872,7 @@ video {
 
 
 /* ORIGINAL SWIIPER FOR HOME PAGE */
-.jkc-timeline-container {
+/* .jkc-timeline-container {
   display: flow-root;
   box-sizing: content-box;
   max-width: 1200px;
@@ -947,9 +948,6 @@ video {
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-title.jackie {
   color: var(--color-gold);
   font-weight: bold;
-  /* font-family: 'roc-grotesk-wide', sans-serif;
-  font-size: clamp(2em, 3vw, 2.7em);
-  font-weight: 400; */
 }
 
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-desc {
@@ -965,7 +963,6 @@ video {
 .jkc-main-slider-wrapper .jkc-main-item .jkc-main-button .link {
   color: var(--color-blue-900);
   cursor: pointer;
-  /* font-weight: 500; */
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -1017,7 +1014,7 @@ video {
   transform: rotate(90deg);
   z-index: 1;
   display: none;
-}
+} */
 
 /* .jkc-main-slider-wrapper .jkc-page-scroll .arrow-up {
   height: 70px;
@@ -1033,7 +1030,7 @@ video {
   overflow: hidden;
 } */
 
-.jkc-main-slider-wrapper .jkc-page-scroll .arrow-slide {
+/* .jkc-main-slider-wrapper .jkc-page-scroll .arrow-slide {
   left: 0;
   top: -100%;
   width: 100%;
@@ -1066,7 +1063,7 @@ video {
   transform: rotate(-45deg) translate(8px, 3px);
   left: 0;
   top: 0;
-}
+} */
 
 /* .jkc-main-slider-wrapper .jkc-page-scroll .arrow-up:hover {
   transition: all 0.1s;
@@ -1085,7 +1082,7 @@ video {
   transform: translateY(200%);
 } */
 
-.jkc-main-slider-wrapper .jkc-main-nav-pag-wrap {
+/* .jkc-main-slider-wrapper .jkc-main-nav-pag-wrap {
   position: absolute;
   top: 0;
   height: 100%;
@@ -1313,7 +1310,116 @@ video {
     padding: 80px;
   }
 
-  /* .jkc-main-slider-wrapper .jkc-main-item .jkc-main-title {
-    font-size: 55px;
-  } */
+  
+} */
+
+
+/* SPIN TEXT IN HERO */
+
+.spin {
+  color: var(--color-pink);
+}
+
+.spin:after {
+  content: "";
+  animation: spin 12s linear infinite;
+  /* animation-duration: 10s; */
+}
+
+@keyframes spin {
+  0% {
+    content: "web designer/devloper";
+  }
+
+  25% {
+    content: "massage therapist";
+  }
+
+  50% {
+    content: "graphic designer";
+  }
+
+  75% {
+    content: "philomath";
+  }
+
+  100% {
+    content: "tattoo lover";
+  }
+}
+
+/* SPIN GALLERY IN HERO */
+.gallery {
+  color: var(--color-pink);
+}
+
+.gallery-container {
+  max-width: 100%;
+  height: auto;
+  grid-column: 5 / 11;
+  grid-row: 2 / 10;
+  z-index: 50;
+  clip-path: circle(50%);
+  animation-name: gallery;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gallery:after {
+  content: "";
+  animation: gallery 10s linear infinite;
+
+}
+
+@keyframes gallery {
+  0% {
+    /* opacity: 1; */
+    content: url('../img-spring26/jackie-code.jpg');
+  }
+
+  25% {
+    /* opacity: 0; */
+    content: url('../img-spring26/jackie-folding3.jpg');
+  }
+
+  50% {
+    /* opacity: 0; */
+    content: url('../img-spring26/jackie-cupping3.jpg');
+  }
+
+  75% {
+    /* opacity: 0; */
+    content: url('../img-spring26/jackie-coding-jkc-gray.jpg');
+  }
+
+  100% {
+    /* opacity: 1; */
+    content: url('../img-spring26/jackie-tracing-gray.jpg');
+  }
+
+}
+
+
+.list-icon {
+  list-style: none;
+
+
+  li {
+    position: relative;
+    padding-left: 40px;
+    line-height: 1.2;
+    margin-block: 20px;
+    text-wrap: balance;
+  }
+
+  img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+  }
 }
