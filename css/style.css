@@ -818,7 +818,8 @@ html {
 .paper {
   max-width: 2000px;
   margin-inline: auto;
-  box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin: 3em;
   /* border: 1px solid blue; */
 }
 
@@ -832,7 +833,7 @@ html {
   .paper {
     width: 100%;
     margin-inline: auto;
-    box-shadow: 0 5px 25px rgba(2, 7, 65, 0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     /* border: 1px solid red; */
   }
 
