@@ -648,7 +648,7 @@ html {
 
   /* CHANGE COLOR OF THE SVG NAVICON WHEN MENU IS OPEN */
   .site-nav[data-menustate="open"] svg.simple-navicon rect {
-    fill: var(--color-white);
+    fill: var(--color-pink);
     /* z-index: 120; */
   }
 
@@ -901,10 +901,8 @@ body>* {
   grid-row: 3 / 5;
   /* border: 1px solid purple; */
   text-transform: uppercase;
-  /* font-weight: lighter; */
   letter-spacing: 2px;
   color: var(--color-whiteblue);
-  font-family: 'roc-grotesk', sans-serif;
   max-inline-size: 20ch;
 
 }
@@ -1336,7 +1334,8 @@ section:has(.observe-me) {
   padding-bottom: var(--unit-m);
   text-transform: uppercase;
   opacity: .5;
-  /* font-famil/y: 'roc-grotesque-wide', sans-serif; */
+  font-family: 'roc-grotesk', sans-serif;
+  /* font-weight: lighter; */
 }
 
 .spin:after {
@@ -1457,7 +1456,6 @@ section:has(.observe-me) {
   font-size: 2.5em;
   letter-spacing: 5px;
   margin-top: 5em;
-  font-family: 'roc-grotesk', sans-serif;
 }
 
 .project-h3-title {
@@ -3791,7 +3789,7 @@ section:has(.observe-me) {
     display: grid;
     grid-template-columns: 5fr 7fr;
     grid-template-rows: auto 1fr;
-    column-gap: 1em;
+    column-gap: 3em;
 
     .projecttext {
       grid-column: 1 / 2;

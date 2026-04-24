@@ -13,6 +13,7 @@
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style-2.css  "> -->
   <link rel="stylesheet" href="css/style-bookcovers.css">
 
   <!-- ADOBE FONTS -->
@@ -41,23 +42,71 @@
 
   </header> -->
 
-  <header class="site-header toggle-nav">
-    <div class="site-id">
-      <a href="index.html"><img src="img-spring26/logo-moon.png" alt="image of a hexagon logo" width="80"
-          height="100"></a>
-      <h1 class="hidden"><a href="index.html">Jackie Choy</a></h1>
+  <header class="site-header on-top-of-hero">
+
+    <div class="logo slide-from-top-and-fade-in delay-4">
+
+      <!-- INLINE SVG LOGO EXAMPLE -->
+      <!-- <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+          <circle cx="250" cy="250" r="250" style="fill:#3b82f6" />
+        </svg>
+        <span class="visually-hidden">KCC New Media Arts Logo</span>
+      </a> -->
+
+      <!-- INLINE IMG LOGO EXAMPLE -->
+      <a href="index.html"><img src="img-spring26/jkc-logo.png" alt="JKC logo" width="70" height="50"></a>
+
+      <h1 class="hide-visually"><a href="index.html">Jackie Choy's Spring 2026 Portfolio</a></h1>
+
     </div>
 
-    <nav class="site-navigation">
-      <button class="menu-button navicon">Menu</button>
-      <ul class="nav">
-
-        <!-- <li><a href="index.html">Home</a></li> -->
-        <li><a class="scroll" href="projects.html">My Work</a></li>
-        <li><a href="about.html">About Me</a></li>
+    <nav class="site-nav">
+      <button class="menubutton">
+        <span class="hide-visually">Menu</span>
+        <svg class="simple-navicon" width="24" height="21">
+          <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+          <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+          <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+        </svg>
+      </button>
+      <ul>
+        <li class="slide-from-top-and-fade-in delay-5"><a href="index.html#projects">projects</a></li>
+        <li class="slide-from-top-and-fade-in delay-6"><a href="#">about</a></li>
 
       </ul>
     </nav>
+
+    <!-- <nav>
+      <div class="menubar">
+        <div class="icons">
+
+
+          <i class="icon-menu"><span></span></i>
+        </div>
+      </div>
+      <ul class="menu">
+
+        <li class="menu-link"><a href="#0" class="text-item">About</a></li>
+        <li class="menu-link sub">
+          <a href="#0" class="text-item">Clients<span class="icon"></span></a>
+          <ul class="submenu">
+            <li class="sub-item"><a href="#0">Burger King</a></li>
+            <li class="sub-item"><a href="#0">Southwest Airlines</a></li>
+            <li class="sub-item"><a href="#0">Levi Strauss</a></li>
+          </ul>
+        </li>
+        <li class="menu-link sub">
+          <a href="#0" class="text-item">Services<span class="icon"></span></a>
+          <ul class="submenu">
+            <li class="sub-item"><a href="#0">Print Design</a></li>
+            <li class="sub-item"><a href="#0">Web Design</a></li>
+            <li class="sub-item"><a href="#0">Mobile App Development</a></li>
+          </ul>
+        </li>
+        <li class="menu-link"><a href="#0" class="text-item">Contact</a></li>
+      </ul>
+    </nav> -->
 
   </header>
 
@@ -73,7 +122,7 @@
         </div>
 
         <div class="jkc-hero-image slide-from-top-and-fade-in delay-4">
-          <img src="img-spring26/book-trilogyBookcover.jpg" alt="Jackie Massage" width="1500" height="1000">
+          <img src="img-spring26/book-trilogyBookcover-1.jpg" alt="Jackie Massage" width="1500" height="1000">
         </div>
 
 
@@ -137,7 +186,6 @@
           <h2 class="brandstrategy-title">sketches</h2>
 
 
-          <!-- Slider main container -->
           <div class="swiper">
 
             <!-- Additional required wrapper -->
@@ -162,12 +210,6 @@
               <div class="swiper-slide">
                 <div class="card">
                   <img src="img-spring26/book-sketches3.jpg" alt="Sketches for book cover" width="1000" height="1000">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="card">
-                  <img src="img-spring26/book-sketches4.jpg" alt="Sketches for book cover" width="1000" height="1000">
                 </div>
               </div>
 
@@ -198,7 +240,6 @@
             <div class="swiper-button-next"></div>
 
           </div>
-        </div>
 
       </section>
 
@@ -218,7 +259,7 @@
 
               <p>
                 David Sedaris humorously describes learning French through cassette tapes and a Walkman, later joking he
-                became a “tapeworm” from constantly listening to audio . Inspired by this, I used a cassette tape as the
+                became a “tapeworm” from constantly listening to audio. Inspired by this, I used a cassette tape as the
                 main visual to evoke nostalgia, with tangled tape representing the messy process of learning, and clean
                 Helvetica type bridging past and present.
               </p>
@@ -235,7 +276,7 @@
 
               <h3 class="book-titles"><em>Big Boy</em></h3>
               <p>David Sedaris recounts a mortifying moment at an Easter dinner when he finds an unflushable mess in the
-                toilet and panics about being blamed, eventually fixing it with a plunger . For the cover, I used a
+                toilet and panics about being blamed, eventually fixing it with a plunger. For the cover, I used a
                 simple wooden stool as a subtle visual reference, paired with bold Copperplate Std type to reflect the
                 story's playful, embarrassing humor.</p>
 
@@ -252,8 +293,8 @@
 
               <h3 class="book-titles"><em>A Shiner Like A Diamond</em></h3>
               <p>David Sedaris reflects on his sister Amy being featured in a magazine, where their father praises her
-                beauty while she playfully mocks his expectations (gradesaver.com
-                ). For the cover, I used dying flowers and wrinkled wrapping to suggest imperfection, with a faint
+                beauty while she playfully mocks his expectations. For the cover, I used dying flowers and wrinkled
+                wrapping to suggest imperfection, with a faint
                 studio light hinting at the photoshoot, and elegant italic type to match her sophisticated yet
                 subversive presence.
               </p>
@@ -311,9 +352,10 @@
     </div>
     <div class="subpage-button">
 
-      <a class="button" href="projects.html">See more projects</a>
+      <a class="button" href="index.html#projects">See more projects</a>
 
-      <a class="button" href="bo">BACK TO TOP</a>
+      <a class="button" href="#">BACK TO TOP</a>
+      <a class="button" href="jkcwellness.html">Rebranding JKC Wellness</a>
     </div>
 
   </main>
@@ -351,7 +393,7 @@
             <ul>
               <li><a href="bookcovers.html">Book Cover Triology</a></li>
               <li><a href="schittscreek.html">Schitt's Creek</a></li>
-              <li><a href="kehindewiley.html">Kehinde Wiley</a></li>
+              <!-- <li><a href="kehindewiley.html">Kehinde Wiley</a></li> -->
 
             </ul>
           </div>

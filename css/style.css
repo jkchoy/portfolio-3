@@ -64,7 +64,8 @@ TABLE OF CONTENTS
   --color-blue-600: #2f455d;
   --color-blue-900: #11212f;
   --color-blue-GM: #043170;
-  --color-teal: #2db6b8;
+  --color-teal: #35B6B9;
+  --color-teal-200: #b2eaeb;
 
   /* light background boxes & title heading box*/
   --color-gray-100: #F2F2F2;
@@ -425,119 +426,323 @@ html {
 
 /* #SITE NAVIGATION  */
 /* Default Site-Navigation Menu (both header & footer) */
-.site-navigation {
-  font-family: 'roc-grotesque', sans-serif;
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: var(--unit-s);
+  flex-wrap: wrap;
 }
 
-.site-navigation .menu-button {
+.site-nav a {
+  color: var(--color-siteheader-links);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: var(--unit-xs);
+  padding-block-start: calc(var(--unit-xs) + .1em);
+
+}
+
+.site-nav a:hover {
+  color: var(--color-siteheader-links-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--color-links);
+  text-underline-offset: .5em;
+  text-decoration-thickness: .1em;
+}
+
+/* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
+.site-nav .menubutton {
+  position: relative;
+  z-index: 100;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: var(--unit-xs);
+  margin-block-start: var(--unit-xs);
+  background-color: transparent;
+}
+
+/* SMALL SCREENS: SHOW MENU BUTTON, HIDE NAV */
+.site-nav .menubutton {
+  display: block;
+}
+
+.site-nav ul {
   display: none;
 }
 
-.site-navigation ul {
-  margin: 0;
-  padding: 0.5em 0;
-  text-align: center;
-}
+/* BIG SCREENS:  HIDE MENU BUTTON, SHOW NAV*/
+@media (width >=768px) {
+  .site-nav .menubutton {
+    display: none;
+  }
 
-.site-navigation ul li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  line-height: 1;
-}
-
-.site-navigation ul li li {
-  white-space: nowrap;
-}
-
-.site-navigation ul li a {
-  display: block;
-  padding: 0.5em 0.75em 0.4em 0.75em;
-}
-
-.site-navigation ul li ul {
-  border-top: none;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  .site-navigation ul {
-    border-top: none;
-    margin: 0;
-    padding: 0;
+  .site-nav ul {
     display: flex;
-    align-items: center;
   }
+}
 
-  .site-navigation ul li {
-    /* DROP DOWN MENU */
-    /* stack nested lists */
-    /* hide nested lists by default */
-    /* show nested lists on hover */
-    /* SELECTED STATE */
-  }
+/* SMALL SCREENS ONLY: ENABLE OVERLAY NAV */
+@media (width < 768px) {
 
-  .site-navigation ul li a {
-    margin: 0 0.5em;
-    padding: 0.85em 0.5em 0.75em 0.5em;
-  }
-
-  .site-navigation ul li a.button {
-    padding: 0.75em 1em;
-  }
-
-  .site-navigation ul li li {
-    display: block;
-  }
-
-  .site-navigation ul li ul {
-    display: block;
-    text-align: left;
-    position: absolute;
-    z-index: 100;
-    left: -9000px;
-    background: #fff;
-  }
-
-  .site-navigation ul li ul a {
-    color: #999;
-  }
-
-  .site-navigation ul li:hover ul {
-    left: auto;
+  .site-nav[data-menustate] ul {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
     right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+    background: var(--color-body-background);
+    /* transition: translate 0.3s ease-out; */
   }
 
-  .site-navigation ul li.selected a,
-  .site-navigation ul li.current-menu-item a {
-    font-weight: bold;
+  .site-nav[data-menustate] a {
+    color: var(--color-white);
   }
 
-  .site-navigation ul li.selected li a,
-  .site-navigation ul li.current-menu-item li a {
-    font-weight: normal;
+  .site-nav[data-menustate="open"] ul {
+    translate: 0 0;
+    animation: openMenuAnimation 0.3s forwards;
   }
-}
 
-@media (max-width: 767px) {
+  .site-nav[data-menustate="closed"] ul {
+    translate: 100% 0;
+    animation: closeMenuAnimation 0.3s forwards;
+  }
 
-  .site-navigation ul li,
-  .site-navigation ul li ul li {
+  @keyframes openMenuAnimation {
+    0% {
+      translate: 100% 0;
+    }
+
+    100% {
+      translate: 0 0;
+    }
+  }
+
+  @keyframes closeMenuAnimation {
+    0% {
+      translate: 0 0;
+    }
+
+    100% {
+      translate: 100% 0;
+    }
+  }
+
+  /* ENABLE SVG ANIMATION FOR THE NAVICON */
+  .site-nav svg.simple-navicon rect {
+    transition: all .3s ease-out;
+    fill: var(--color-teal);
+  }
+
+  /* CHANGE COLOR OF THE SVG NAVICON WHEN MENU IS OPEN */
+  .site-nav[data-menustate="open"] svg.simple-navicon rect {
+    fill: var(--color-pink);
+    /* z-index: 120; */
+  }
+
+  /* ANIMATE NAVICON LINES TO AN X WHEN OPEN */
+  .site-nav .simple-navicon {
     display: block;
+    /* z-index: 100; */
+
   }
 
-  .site-navigation ul li a:hover {
-    color: #fff;
-    background-color: #003;
+  .site-nav .simple-navicon rect {
+    transform-origin: center;
+    width: 100%;
   }
+
+  .site-nav[data-menustate="open"] .simple-navicon {
+    position: fixed;
+    top: calc(var(--unit-s) + var(--unit-s));
+    right: calc(var(--unit-s) + var(--unit-xs));
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-top {
+    rotate: 45deg;
+    translate: -21% 24%;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-middle {
+    opacity: 0;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-bottom {
+    rotate: -45deg;
+    translate: -21% -24%;
+  }
+
 }
 
-/* Default Site-Navigation (footer only) */
-.site-footer .site-navigation ul {
-  border-top: none;
+
+
+
+/* MAIN SITE NAV */
+
+.site-nav ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: var(--unit-s);
+  flex-wrap: wrap;
 }
+
+.site-nav a {
+  color: var(--color-siteheader-links);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: var(--unit-xs);
+  padding-block-start: calc(var(--unit-xs) + .1em);
+
+}
+
+.site-nav a:hover {
+  color: var(--color-siteheader-links-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--color-links);
+  text-underline-offset: .5em;
+  text-decoration-thickness: .1em;
+}
+
+/* SHOW MENU BUTTON ON HIGHER LAYER WHEN NAV IS OPEN */
+.site-nav .menubutton {
+  position: relative;
+  z-index: 100;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: var(--unit-xs);
+  margin-block-start: var(--unit-xs);
+  background-color: transparent;
+}
+
+/* SMALL SCREENS: SHOW MENU BUTTON, HIDE NAV */
+.site-nav .menubutton {
+  display: block;
+}
+
+.site-nav ul {
+  display: none;
+}
+
+/* BIG SCREENS:  HIDE MENU BUTTON, SHOW NAV*/
+@media (width >=768px) {
+  .site-nav .menubutton {
+    display: none;
+  }
+
+  .site-nav ul {
+    display: flex;
+  }
+}
+
+/* SMALL SCREENS ONLY: ENABLE OVERLAY NAV */
+@media (width < 768px) {
+
+  .site-nav[data-menustate] ul {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+    background: var(--color-body-background);
+    /* transition: translate 0.3s ease-out; */
+  }
+
+  .site-nav[data-menustate] a {
+    color: var(--color-white);
+  }
+
+  .site-nav[data-menustate="open"] ul {
+    translate: 0 0;
+    animation: openMenuAnimation 0.3s forwards;
+  }
+
+  .site-nav[data-menustate="closed"] ul {
+    translate: 100% 0;
+    animation: closeMenuAnimation 0.3s forwards;
+  }
+
+  @keyframes openMenuAnimation {
+    0% {
+      translate: 100% 0;
+    }
+
+    100% {
+      translate: 0 0;
+    }
+  }
+
+  @keyframes closeMenuAnimation {
+    0% {
+      translate: 0 0;
+    }
+
+    100% {
+      translate: 100% 0;
+    }
+  }
+
+  /* ENABLE SVG ANIMATION FOR THE NAVICON */
+  .site-nav svg.simple-navicon rect {
+    transition: all .3s ease-out;
+    fill: var(--color-teal);
+  }
+
+  /* CHANGE COLOR OF THE SVG NAVICON WHEN MENU IS OPEN */
+  .site-nav[data-menustate="open"] svg.simple-navicon rect {
+    fill: var(--color-pink);
+    /* z-index: 120; */
+  }
+
+  /* ANIMATE NAVICON LINES TO AN X WHEN OPEN */
+  .site-nav .simple-navicon {
+    display: block;
+    /* z-index: 100; */
+
+  }
+
+  .site-nav .simple-navicon rect {
+    transform-origin: center;
+    width: 100%;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon {
+    position: fixed;
+    top: calc(var(--unit-s) + var(--unit-s));
+    right: calc(var(--unit-s) + var(--unit-xs));
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-top {
+    rotate: 45deg;
+    translate: -21% 24%;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-middle {
+    opacity: 0;
+  }
+
+  .site-nav[data-menustate="open"] .simple-navicon-bottom {
+    rotate: -45deg;
+    translate: -21% -24%;
+  }
+
+}
+
 
 /* TOGGLE NAV */
 @media (max-width: 767px) {
