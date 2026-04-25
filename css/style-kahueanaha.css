@@ -28,7 +28,10 @@
 
   --color-rose-400: #a36265;
 
-  --color-green: #075303;
+  --color-Turquoise: #0db39d;
+  --color-reflexblue: #001489;
+  --color-kcc-offwhite: #EFE6DC;
+
 
 
   /* DEFINE SEMANTIC COLORS */
@@ -114,15 +117,15 @@
 
 .intro-box {
   /* display: inline-block; */
-  background-color: var(--color-green);
-  color: var(--color-white);
+  background-color: var(--color-reflexblue);
+  color: var(--color-kcc-offwhite);
   padding: 2em;
   /* margin: 2em 0; */
 }
 
 .hero-subpage-title {
   font-family: 'roc-grotesk-wide', sans-serif;
-  color: var(--color-white);
+  color: var(--color-kcc-offwhite);
   font-weight: 500;
   text-transform: uppercase;
   font-size: clamp(2.2em, 3vw, 3.5em);
@@ -185,6 +188,9 @@
   color: var(--color-white);
 }
 
+.eyebrow.subpage.kcc {
+  color: var(--color-kcc-offwhite);
+}
 
 .brandstrategy-title {
   font-family: roc-grotesk-wide, sans-serif;
@@ -271,7 +277,7 @@
 
   p {
     display: inline-block;
-    border-top: 15px solid var(--color-green);
+    border-top: 15px solid var(--color-reflexblue);
     padding-top: .7em;
     margin: 0;
   }
@@ -632,7 +638,7 @@ h3.jkc-kehinde-subtitle {
 
     p {
       display: inline-block;
-      border-top: 15px solid var(--color-green);
+      border-top: 15px solid var(--color-reflexblue);
       padding-top: .7em;
       margin: 0;
     }
@@ -699,7 +705,7 @@ h3.jkc-kehinde-subtitle {
 
     p {
       display: inline-block;
-      border-top: 15px solid var(--color-green);
+      border-top: 15px solid var(--color-reflexblue);
       padding-top: .7em;
       margin: 0;
     }
@@ -765,7 +771,7 @@ h3.jkc-kehinde-subtitle {
 
     p {
       display: inline-block;
-      border-top: 15px solid var(--color-green);
+      border-top: 15px solid var(--color-reflexblue);
       padding-top: .7em;
       margin: 0;
     }
@@ -831,7 +837,7 @@ h3.jkc-kehinde-subtitle {
 
     p {
       display: inline-block;
-      border-top: 15px solid var(--color-green);
+      border-top: 15px solid var(--color-reflexblue);
       padding-top: .7em;
       margin: 0;
     }
