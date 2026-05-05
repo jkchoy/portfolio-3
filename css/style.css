@@ -66,6 +66,7 @@ TABLE OF CONTENTS
   --color-blue-GM: #043170;
   --color-teal: #35B6B9;
   --color-teal-200: #b2eaeb;
+  --color-greendark: #06092c;
 
   /* light background boxes & title heading box*/
   --color-gray-100: #F2F2F2;
@@ -664,7 +665,7 @@ html {
   }
 
   .site-nav[data-menustate] a {
-    color: var(--color-white);
+    color: var(--color-teal);
   }
 
   .site-nav[data-menustate="open"] ul {
@@ -1011,6 +1012,14 @@ html {
 .subpage-button {
   display: flex;
   justify-content: space-between;
+  margin: 3em;
+}
+
+@media (width < 768px) {
+  .subpage-button {
+    /* flex-direction: column; */
+    gap: var(--unit-s);
+  }
 }
 
 

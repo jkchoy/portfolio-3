@@ -103,3 +103,32 @@ function openSubmenu(event) {
     event.currentTarget.classList.add("active");
   }
 }
+
+
+/* ----------------------------
+       ACCORDION CAROUSEL CODE
+    ---------------------------- */
+
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    accordionItems.forEach(i => i.classList.remove("active"));
+    item.classList.add("active");
+
+  });
+});
+
+Fancybox.bind("[data-fancybox='gallery']", {
+  on: {
+    reveal: () => {
+      document.querySelector('.carousel-track').style.animationPlayState = 'paused';
+    },
+    closing: () => {
+      document.querySelector('.carousel-track').style.animationPlayState = 'running';
+    }
+  }
+});
+
+});

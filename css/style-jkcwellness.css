@@ -16,6 +16,7 @@
   --color-blue-900: #11212f;
 
   --color-blue-gray: #74799F;
+  --color-lightblue: #81c7d0;
 
   /* light background boxes & title heading box*/
   --color-gray-100: #eef1f2;
@@ -128,7 +129,7 @@
 
   p {
     display: inline-block;
-    border-top: 15px solid var(--color-blue-gray);
+    border-top: 15px solid var(--color-lightblue);
     padding-top: .7em;
     margin: 0;
   }
@@ -173,15 +174,15 @@
 
 .intro-box {
   /* display: inline-block; */
-  background-color: var(--color-blue-gray);
-  color: var(--color-white);
+  background-color: var(--color-lightblue);
+  color: var(--color-blue-900);
   padding: 2em;
   /* margin: 2em 0; */
 }
 
 .hero-subpage-title {
   font-family: 'roc-grotesk-wide', sans-serif;
-  color: var(--color-white);
+  color: var(--color-blue-900);
   font-weight: 500;
   text-transform: uppercase;
   /* font-size: 3.5em; */
@@ -243,7 +244,8 @@
 }
 
 .eyebrow.subpage.white-text {
-  color: var(--color-white);
+  color: var(--color-blue-900);
+  opacity: .5;
 }
 
 
@@ -765,6 +767,7 @@
       /* border-top: 10px solid var(--color-blue-gray); */
       padding-top: .25em;
       /* font-size: 1.2em; */
+      /* display: none; */
     }
 
     .jkc-hero-image {
@@ -1027,4 +1030,71 @@
     width: 100%;
     /* height: auto; */
   }
+}
+
+
+
+
+/* CAROUSEL */
+.carousel {
+  /* width: calc(100% + 5em); */
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+  /* margin-inline: -2.5em; */
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 50s linear infinite;
+}
+
+.carousel a {
+  cursor: pointer;
+}
+
+.carousel-text {
+  justify-content: center;
+  padding-top: 0;
+}
+
+
+/* pause animation hover on carousel */
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel img {
+  height: 400px;
+  width: auto;
+  margin-right: 20px;
+  object-fit: cover;
+  /* border-radius: 10px; */
+  /* border: 3px solid black; */
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+}
+
+/* scale image on hover */
+/* .carousel img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+} */
+
+/* scrolling animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.anatomy-video {
+  width: 100%;
+  height: auto;
 }
