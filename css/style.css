@@ -612,11 +612,10 @@ html {
 .site-nav a {
   color: var(--color-siteheader-links);
   text-decoration: none;
-  font-weight: bold;
   display: block;
   padding: var(--unit-xs);
   padding-block-start: calc(var(--unit-xs) + .1em);
-
+  color: var(--color-teal);
 }
 
 .site-nav a:hover {
