@@ -41,23 +41,41 @@
 
   </header> -->
 
-  <header class="site-header toggle-nav">
-    <div class="site-id">
-      <a href="index.html"><img src="img-spring26/logo-moon.png" alt="image of a hexagon logo" width="80"
-          height="100"></a>
-      <h1 class="hidden"><a href="index.html">Jackie Choy</a></h1>
+  <header class="site-header on-top-of-hero">
+
+    <div class="logo slide-from-top-and-fade-in delay-4">
+
+      <!-- INLINE SVG LOGO EXAMPLE -->
+      <!-- <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+          <circle cx="250" cy="250" r="250" style="fill:#3b82f6" />
+        </svg>
+        <span class="visually-hidden">KCC New Media Arts Logo</span>
+      </a> -->
+
+      <!-- INLINE IMG LOGO EXAMPLE -->
+      <a href="index.html"><img src="img-spring26/jkc-logo.png" alt="JKC logo" width="70" height="50"></a>
+
+      <h1 class="hide-visually"><a href="index.html">Jackie Choy's Spring 2026 Portfolio</a></h1>
+
     </div>
 
-    <nav class="site-navigation">
-      <button class="menu-button navicon">Menu</button>
-      <ul class="nav">
-
-        <!-- <li><a href="index.html">Home</a></li> -->
-        <li><a class="scroll" href="projects.html">My Work</a></li>
-        <li><a href="about.html">About Me</a></li>
+    <nav class="site-nav">
+      <button class="menubutton">
+        <span class="hide-visually">Menu</span>
+        <svg class="simple-navicon" width="24" height="21">
+          <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+          <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+          <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+        </svg>
+      </button>
+      <ul>
+        <li class="slide-from-top-and-fade-in delay-5"><a href="index.html#projects">projects</a></li>
+        <li class="slide-from-top-and-fade-in delay-6"><a href="#">about</a></li>
 
       </ul>
     </nav>
+
 
   </header>
 
@@ -85,14 +103,11 @@
 
 
           <div class="hero-subpage-text slide-from-top-and-fade-in delay-2">
-            <p>This project involved both redesigning an existing website and bringing that design to life through
-              coding in a separate class, emphasizing a seamless transition from concept to execution. I began by
-              analyzing the original site to identify opportunities for improvement in layout, navigation, user
-              experience, and visual identity, then developed style tiles and wireframes to guide a clean, user-friendly
-              redesign aligned with the brand's goals. Once the design was finalized, I moved into the development
-              phase, translating the visual concept into a fully functional website using HTML, CSS, and basic
-              JavaScript. Throughout the process, I focused on creating a responsive and accessible experience that
-              remained true to the original design vision from start to launch.</p>
+            <p>This project combined redesigning a website and building it in code. I started by analyzing the original
+              site to improve layout, navigation, user experience, and visuals, then created style tiles and wireframes
+              for a cleaner design. After finalizing the design, I developed the site using HTML, CSS, and basic
+              JavaScript. Throughout, I focused on making it responsive, accessible, and true to the original vision.
+            </p>
 
             <!-- <p>Fit For a Goddess is a Hawaii-based fitness and wellness brand that empowers women to transform their
               bodies and confidence through supportive coaching, holistic training, and a community-driven approach
@@ -288,12 +303,15 @@
 
       </section>
     </div>
-    <div class="subpage-button">
+    <section class="container">
+      <div class="subpage-button project-buttons">
 
-      <a class="button" href="projects.html">See more projects</a>
+        <a class="button" href="schittscreek.html">Schitt's Creek</a>
 
-      <a class="button" href="fitforagoddess.html">BACK TO TOP</a>
-    </div>
+        <a class="button" href="#">back to top</a>
+        <a class="button" href="kahueanaha.html">Ka Hue Anahā</a>
+      </div>
+    </section>
 
   </main>
 

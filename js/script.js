@@ -1,27 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-
-  //JAVASCRIPT FUNCTIONS GO HERE
-  console.log(' Javascript IS READY');
+// document.addEventListener('DOMContentLoaded', function () {
 
 
+//   console.log(' Javascript IS READY');
 
 
-});
 
-document.addEventListener("DOMContentLoaded", function () {
 
-  //TOGGLE MENU NAV FOR MOBILE BUTTON
-  const menubutton = document.querySelector('.menu-button');
-  const menunav = document.querySelector('.toggle-nav');
-  menubutton.addEventListener('click', function () {
-    if (menunav.getAttribute('data-navstate') === 'open') {
-      menunav.setAttribute('data-navstate', 'closed');
-    } else {
-      menunav.setAttribute('data-navstate', 'open');
-    }
-  });
+// });
 
-});
+
+
+//TOGGLE MENU NAV FOR MOBILE BUTTON
+// document.addEventListener("DOMContentLoaded", function () {
+//   const menubutton = document.querySelector('.menu-button');
+//   const menunav = document.querySelector('.toggle-nav');
+//   menubutton.addEventListener('click', function () {
+//     if (menunav.getAttribute('data-navstate') === 'open') {
+//       menunav.setAttribute('data-navstate', 'closed');
+//     } else {
+//       menunav.setAttribute('data-navstate', 'open');
+//     }
+//   });
+
+// });
 
 
 
@@ -70,65 +71,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // NAV MENU ICON
-var iconMenu = document.querySelector('.icon-menu'),
-  menu = document.querySelector('.menu'),
-  menuLink = document.querySelectorAll('.menu-link.sub');
+// var iconMenu = document.querySelector('.icon-menu'),
+//   menu = document.querySelector('.menu'),
+//   menuLink = document.querySelectorAll('.menu-link.sub');
 
-iconMenu.addEventListener('click', openMenu);
+// iconMenu.addEventListener('click', openMenu);
 
-menuLink.forEach(function (el) {
-  el.addEventListener('click', openSubmenu);
-});
+// menuLink.forEach(function (el) {
+//   el.addEventListener('click', openSubmenu);
+// });
 
-function openMenu() {
+// function openMenu() {
 
-  if (menu.classList.contains('open')) {
-    menu.classList.add('close');
-    iconMenu.classList.remove('icon-closed');
+//   if (menu.classList.contains('open')) {
+//     menu.classList.add('close');
+//     iconMenu.classList.remove('icon-closed');
 
-    setTimeout(function () { menu.classList.remove('open'); }, 1300);
+//     setTimeout(function () { menu.classList.remove('open'); }, 1300);
 
-  } else {
-    menu.classList.remove('close');
-    menu.classList.add('open');
-    iconMenu.classList.add('icon-closed');
-  }
-}
+//   } else {
+//     menu.classList.remove('close');
+//     menu.classList.add('open');
+//     iconMenu.classList.add('icon-closed');
+//   }
+// }
 
-function openSubmenu(event) {
+// function openSubmenu(event) {
 
-  if (event.currentTarget.classList.contains("active")) {
-    event.currentTarget.classList.remove("active");
-  } else {
-    event.currentTarget.classList.add("active");
-  }
-}
+//   if (event.currentTarget.classList.contains("active")) {
+//     event.currentTarget.classList.remove("active");
+//   } else {
+//     event.currentTarget.classList.add("active");
+//   }
+// }
 
 
-/* ----------------------------
-       ACCORDION CAROUSEL CODE
-    ---------------------------- */
 
-const accordionItems = document.querySelectorAll(".accordion-item");
-
-accordionItems.forEach(item => {
-  item.addEventListener("click", () => {
-
-    accordionItems.forEach(i => i.classList.remove("active"));
-    item.classList.add("active");
-
-  });
-});
-
-Fancybox.bind("[data-fancybox='gallery']", {
-  on: {
-    reveal: () => {
-      document.querySelector('.carousel-track').style.animationPlayState = 'paused';
-    },
-    closing: () => {
-      document.querySelector('.carousel-track').style.animationPlayState = 'running';
-    }
-  }
-});
-
-});

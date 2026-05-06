@@ -223,6 +223,18 @@ h4 {
   font-style: normal;
 }
 
+.eyebrow.subpage {
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .05em;
+  color: var(--color-black);
+  opacity: .8;
+  font-family: roc-grotesk, sans-serif;
+  font-style: normal;
+  text-align: left;
+  /* margin-bottom: .7em; */
+}
+
 /* GLOBAL MEDIA */
 
 /* IMAGES (Responsive)
@@ -439,10 +451,10 @@ html {
 .site-nav a {
   color: var(--color-siteheader-links);
   text-decoration: none;
-  font-weight: bold;
   display: block;
   padding: var(--unit-xs);
   padding-block-start: calc(var(--unit-xs) + .1em);
+  font-family: 'roc-grotesk-wide', sans-serif;
 
 }
 
@@ -1016,10 +1028,19 @@ html {
 }
 
 @media (width < 768px) {
-  .subpage-button {
+  .subpage-button.project-buttons {
     /* flex-direction: column; */
     gap: var(--unit-s);
+    margin: 0;
+    /* padding: 0; */
+    /* border: 1px solid red; */
+
+    .button {
+      font-size: 12px;
+      text-align: center;
+    }
   }
+
 }
 
 
@@ -1059,6 +1080,22 @@ html {
     padding-bottom: 5em;
   }
 }
+
+@media (width < 1060px) {
+
+  .paper {
+    margin: 0;
+  }
+}
+
+@media (width < 800px) {
+
+  .paper {
+    margin: 0;
+  }
+}
+
+
 
 
 .hero-subpage {
@@ -1637,4 +1674,15 @@ video {
     left: 0;
 
   }
+}
+
+.h3-subtitle {
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: .02em;
+  margin-bottom: .3em;
+  text-align: left;
+  margin-top: 4px;
 }

@@ -23,41 +23,41 @@
 
 <body>
 
-  <!-- <header class="site-header toggle-nav">
-    <div class="site-id">
-      <a href="index.html"><img src="../portfolio/portfolio-images/rosehexlogo-jac3.png" alt="image of a hexagon logo"
-          width="200" height="250"></a>
-      <h1 class="hidden"><a href="../portfolio/index.html">Jackie Choy</a></h1>
+  <header class="site-header on-top-of-hero">
+
+    <div class="logo slide-from-top-and-fade-in delay-4">
+
+      <!-- INLINE SVG LOGO EXAMPLE -->
+      <!-- <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+          <circle cx="250" cy="250" r="250" style="fill:#3b82f6" />
+        </svg>
+        <span class="visually-hidden">KCC New Media Arts Logo</span>
+      </a> -->
+
+      <!-- INLINE IMG LOGO EXAMPLE -->
+      <a href="index.html"><img src="img-spring26/jkc-logo.png" alt="JKC logo" width="70" height="50"></a>
+
+      <h1 class="hide-visually"><a href="index.html">Jackie Choy's Spring 2026 Portfolio</a></h1>
+
     </div>
 
-    <nav class="site-navigation">
-      <button class="menu-button navicon">Menu</button>
-      <ul class="nav">
-
-        
-        <li><a class="scroll" href="projects.html">My Work</a></li>
-        <li><a href="#">About Me</a></li>
-    </nav>
-
-  </header> -->
-
-  <header class="site-header toggle-nav">
-    <div class="site-id">
-      <a href="index.html"><img src="img-spring26/logo-moon.png" alt="image of a hexagon logo" width="80"
-          height="100"></a>
-      <h1 class="hidden"><a href="index.html">Jackie Choy</a></h1>
-    </div>
-
-    <nav class="site-navigation">
-      <button class="menu-button navicon">Menu</button>
-      <ul class="nav">
-
-        <!-- <li><a href="index.html">Home</a></li> -->
-        <li><a class="scroll" href="projects.html">My Work</a></li>
-        <li><a href="about.html">About Me</a></li>
+    <nav class="site-nav">
+      <button class="menubutton">
+        <span class="hide-visually">Menu</span>
+        <svg class="simple-navicon" width="24" height="21">
+          <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+          <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+          <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+        </svg>
+      </button>
+      <ul>
+        <li class="slide-from-top-and-fade-in delay-5"><a href="index.html#projects">projects</a></li>
+        <li class="slide-from-top-and-fade-in delay-6"><a href="#">about</a></li>
 
       </ul>
     </nav>
+
 
   </header>
 
@@ -283,12 +283,15 @@
 
     </div>
 
-    <div class="subpage-button">
+    <section class="container">
+      <div class="subpage-button project-buttons">
 
-      <a class="button" href="projects.html">See more projects</a>
+        <a class="button" href="islandsnow.html">Island Snow</a>
 
-      <a class="button" href="salzburg.html">BACK TO TOP</a>
-    </div>
+        <a class="button" href="#">back to top</a>
+        <a class="button" href="fancyfreshfoodshop.html">Fancy Fresh Food Shop</a>
+      </div>
+    </section>
   </main>
 
 
