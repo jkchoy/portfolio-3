@@ -543,7 +543,11 @@
 .option {
   color: var(--color-gray-300);
   text-transform: uppercase;
-  padding-bottom: .5em
+  /* padding-bottom: .5em */
+}
+
+.row.salzburg {
+  gap: 2em;
 }
 
 .book-titles {
