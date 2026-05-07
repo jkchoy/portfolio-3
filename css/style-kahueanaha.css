@@ -618,7 +618,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .2fr .31fr .42fr .6fr .2fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: pink;
+    /* background-color: pink; */
   }
 
   .jkc-running-head {
@@ -684,7 +684,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .2fr .25fr .4fr .7fr .1fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: peru;
+    /* background-color: peru; */
   }
 
   .jkc-running-head {
@@ -750,7 +750,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .15fr .2fr .3fr .8fr .1fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 
   .jkc-running-head {
@@ -816,7 +816,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-columns: 100px 1fr 1fr 100px;
     grid-template-rows: .12fr .18fr .18fr .8fr .1fr;
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
-    background-color: peachpuff;
+    /* background-color: peachpuff; */
   }
 
   .jkc-running-head {
@@ -885,7 +885,7 @@ h3.jkc-kehinde-subtitle {
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
     grid-template-rows: 1em 1em 1em repeat(30, 40px) 1em 1em 1em;
-    background-color: orange;
+    /* background-color: orange; */
 
 
     .jkc-running-head {
@@ -945,7 +945,7 @@ h3.jkc-kehinde-subtitle {
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
     grid-template-rows: 1em 1em 1em repeat(30, 40px) 1em 1em 1em;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
 
 
     .jkc-running-head {
@@ -1007,7 +1007,7 @@ h3.jkc-kehinde-subtitle {
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
     grid-template-rows: 1em 1em 1em repeat(41, 40px) 1em 1em 1em;
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
 
 
     .jkc-running-head {
@@ -1068,7 +1068,7 @@ h3.jkc-kehinde-subtitle {
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
     grid-template-rows: 1em 1em 1em repeat(41, 40px) 1em 1em 1em;
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
 
 
     .jkc-running-head {
