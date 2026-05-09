@@ -174,7 +174,7 @@
   background-color: var(--color-body-background);
 }
 
-.brand-execution {
+.brand-strategy {
   padding-top: 3em;
   padding-bottom: 5em;
   background-color: var(--color-whitebox);
@@ -314,12 +314,14 @@
 }
 
 .schittscreek-img {
-  margin-top: 5em;
+  /* margin-top: 7em; */
+  padding: 7em 0;
+  background-color: var(--color-body-background);
 }
 
 
 .container-img {
-  /* padding-bottom: 1.5em; */
+  padding-bottom: 4em;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 

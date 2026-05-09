@@ -54,7 +54,7 @@ TABLE OF CONTENTS
   /* DEFINE BASE COLORS */
   --color-white: #e3e3e3;
   --color-offwhite: #efeded;
-  --color-paperwhite: #F2F2F2;
+  --color-paperwhite: #fcfcfc;
   --color-black: #232323;
   --color-black-80: rgb(0 0 0 / .8);
 
@@ -1054,6 +1054,7 @@ html {
   margin-inline: auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   margin: 3em;
+  background-color: var(--color-paperwhite);
   /* border: 1px solid blue; */
 }
 
