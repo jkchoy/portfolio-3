@@ -155,8 +155,7 @@
 }
 
 .brand-assets {
-  padding-top: 3em;
-  padding-bottom: 5em;
+  padding: 7em 0 5em 0;
   background-color: var(--color-body-background);
 }
 
@@ -386,6 +385,7 @@
 
 
 
+
 /* MAGZINE LAYOUT */
 .case-study-magazine {
   margin: 1em 0 1em 0;
@@ -609,7 +609,26 @@ h3.jkc-kehinde-subtitle {
 }
 
 
+
+/* 1. Hide on small screens (e.g., < 600px) */
+@media only screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+    /* Element disappears */
+  }
+}
+
+/* 2. Hide on large screens (e.g., > 600px) */
+@media(min-width: 1200px) {
+  .hide-on-desktop {
+    display: none;
+    /* Element disappears */
+  }
+}
+
+
 /* MOBILE */
+
 
 @media (width <1400px) {
   .jkc-case-study-top {
@@ -674,6 +693,19 @@ h3.jkc-kehinde-subtitle {
     background-color: var(--color-whitebox);
     z-index: 3;
     /* border: 1px solid rebeccapurple; */
+  }
+
+  .case-study-magazine {
+    margin: 1em 3em 1em 0em;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .hide-me {
+    width: 100%;
+    height: auto;
+    /* display: none; */
   }
 }
 
@@ -741,6 +773,21 @@ h3.jkc-kehinde-subtitle {
     z-index: 3;
     /* border: 1px solid rebeccapurple; */
   }
+
+  .case-study-magazine {
+    margin: 1em 3em 1em 0em;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .hide-me {
+    width: 100%;
+    height: auto;
+    /* display: none; */
+  }
+
+
 }
 
 @media (width < 1200px) {
@@ -806,6 +853,18 @@ h3.jkc-kehinde-subtitle {
     background-color: var(--color-whitebox);
     z-index: 3;
     /* border: 1px solid rebeccapurple; */
+  }
+
+  .case-study-magazine {
+    margin: 1em 3em 1em 0em;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .journal-layout {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -873,6 +932,18 @@ h3.jkc-kehinde-subtitle {
     z-index: 3;
     /* border: 1px solid rebeccapurple; */
   }
+
+  .case-study-magazine {
+    margin: 1em 0 1em 0;
+    width: 70%;
+    height: auto;
+    /* display: none; */
+  }
+
+  .journal-layout {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (width < 1100px) {
@@ -932,8 +1003,15 @@ h3.jkc-kehinde-subtitle {
     margin: 1em 0 1em 0;
     width: 100%;
     height: auto;
-
+    /* display: none; */
   }
+
+  .journal-layout {
+    width: 100%;
+    height: auto;
+  }
+
+
 }
 
 @media (width < 1050px) {
@@ -989,10 +1067,15 @@ h3.jkc-kehinde-subtitle {
   }
 
   .case-study-magazine {
-    margin: 1em 0 1em 0;
+    margin: 1em 3em 1em 0em;
     width: 100%;
     height: auto;
+    /* display: none; */
+  }
 
+  .journal-layout {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1006,7 +1089,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-rows: .5fr 1fr 1fr .8fr 2fr; */
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
-    grid-template-rows: 1em 1em 1em repeat(41, 40px) 1em 1em 1em;
+    grid-template-rows: 1em 1em 1em repeat(35, 40px) 1em 1em 1em;
     /* background-color: lightseagreen; */
 
 
@@ -1030,31 +1113,36 @@ h3.jkc-kehinde-subtitle {
 
     .intro-box {
       grid-column: 4 / 9;
-      grid-row: 10 / 35;
+      grid-row: 10 / 29;
 
       /* display: none; */
     }
 
     .brand-strategy {
       grid-column: 4 / 9;
-      grid-row: 36 / 46;
+      grid-row: 30 / 42;
       padding: 1em;
       /* display: none; */
     }
 
     .gray-box {
       grid-column: 1 / 12;
-      grid-row: 35 / 50;
+      grid-row: 29 / 42;
       background-color: var(--color-whitebox);
       /* display: none; */
     }
   }
 
   .case-study-magazine {
-    margin: 1em 0 1em 0;
+    margin: 1em 3em 1em 0em;
     width: 100%;
     height: auto;
+    /* display: none; */
+  }
 
+  .journal-layout {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1067,7 +1155,7 @@ h3.jkc-kehinde-subtitle {
     grid-template-rows: .5fr 1fr 1fr .8fr 2fr; */
     /* grid-template-rows: 20% 20% 30% 20% 30% auto; */
     grid-template-columns: 1em 1em 1em repeat(5, auto) 1em 1em 1em;
-    grid-template-rows: 1em 1em 1em repeat(41, 40px) 1em 1em 1em;
+    grid-template-rows: 1em 1em 1em repeat(43, 40px) 1em 1em 1em;
     /* background-color: lightskyblue; */
 
 
@@ -1111,10 +1199,18 @@ h3.jkc-kehinde-subtitle {
     }
   }
 
-  .case-study-magazine {
-    margin: 1em 0 1em 0;
+  .case-study-magazine.hide-me {
+    margin: 1em 3em 1em 0em;
     width: 100%;
     height: auto;
+    /* display: none; */
+  }
+
+  .journal-layout {
+
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
 
   }
 }
