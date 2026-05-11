@@ -1658,7 +1658,7 @@ section:has(.observe-me) {
 /* NEW FOOTER */
 
 .footer-container {
-  margin: 0 15em;
+  margin: 0 5em;
   padding: var(--unit-xl);
   flex-wrap: wrap;
   /* border: 1px solid red; */
@@ -1668,7 +1668,7 @@ section:has(.observe-me) {
 .row.footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: var(--unit-xl);
+  grid-gap: var(--unit-l);
 
 }
 
@@ -1695,6 +1695,31 @@ section:has(.observe-me) {
 
 .copywrite {
   padding-top: 3em;
+  font-size: .8em;
+
+}
+
+.coded-me {
+
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    text-transform: uppercase;
+    font-family: 'roc-grotesk-wide', sans-serif;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.all-right {
+  margin-top: 0;
+}
+
+.hr-color {
+  border-color: var(--color-pink);
+  margin: .7em;
 }
 
 

@@ -26,7 +26,9 @@
 
   --color-salmon: #f6a68d;
 
-  --color-pink: #FFBDC4;
+  --color-lightpink: #FFBDC4;
+
+  --color-pink: #c75c7e;
 
   --color-rose-400: #a36265;
 
@@ -111,7 +113,7 @@
   color: var(--color-black);
   letter-spacing: 2px;
   /* display: inline-block; */
-  border-top: 10px solid var(--color-pink);
+  border-top: 10px solid var(--color-lightpink);
   font-family: 'roc-grotesk-wide', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -127,7 +129,7 @@
 
 .intro-box {
   /* display: inline-block; */
-  background-color: var(--color-pink);
+  background-color: var(--color-lightpink);
   color: var(--color-black);
   padding: 2em;
   /* margin: 2em 0; */
@@ -437,7 +439,7 @@
 
   p {
     display: inline-block;
-    border-top: 15px solid var(--color-pink);
+    border-top: 15px solid var(--color-lightpink);
     padding-top: .7em;
     margin: 0;
   }
