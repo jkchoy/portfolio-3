@@ -222,21 +222,7 @@
   font-family: 'elza', sans-serif;
 }
 
-.h4-subtitle.ribbon::after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: var(--color-pink-ffg);
-}
 
-.h4-subtitle.desing-concept::after {
-  content: "";
-  display: block;
-  width: 300px;
-  height: 2px;
-  background-color: var(--color-pink-ffg);
-}
 
 .subpage-subtitle.spacing {
   padding: 2em 0 .5em 0;
@@ -281,6 +267,7 @@
 
 .Front-End-Web-Development {
   padding-top: 5em;
+
   /* border: 1px solid red; */
 }
 

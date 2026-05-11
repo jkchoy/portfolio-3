@@ -757,7 +757,7 @@
     /* background-color: var(--color-paperwhite); */
     display: grid;
     grid-template-columns: 100px 1fr 1fr 100px;
-    grid-template-rows: .2fr .33fr .7fr .7fr 1fr;
+    grid-template-rows: .2fr .5fr .5fr .7fr 1fr;
     /* background-color: pink; */
     /* border: 5px solid red; */
 

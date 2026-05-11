@@ -315,13 +315,13 @@
 
 .schittscreek-img {
   /* margin-top: 7em; */
-  padding: 7em 0;
+  padding-top: 7em;
   background-color: var(--color-body-background);
 }
 
 
 .container-img {
-  padding-bottom: 4em;
+  /* padding-bottom: 4em; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 

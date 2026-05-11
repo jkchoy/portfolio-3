@@ -153,8 +153,8 @@
 }
 
 .brand-assets {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 9em;
+  /* padding-bottom: 5em; */
   background-color: var(--color-body-background);
 }
 
@@ -523,13 +523,10 @@
 }
 
 .video {
-  padding-top: 5em;
-}
-
-.img-storyboard {
-  padding: 2em 0 6em 0;
+  padding: 9em 0 7em 0;
 
 }
+
 
 .book-titles {
   font-family: 'roc-grotesk', sans-serif;
