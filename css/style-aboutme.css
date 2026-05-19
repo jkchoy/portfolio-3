@@ -188,6 +188,14 @@ body {
   text-transform: uppercase;
 }
 
+.eyebrow.aboutme {
+  font-family: 'elze', sans-serif;
+  font-weight: lighter;
+  color: var(--color-gray-600);
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
 .row {
   gap: var(--unit-xl);
 }
