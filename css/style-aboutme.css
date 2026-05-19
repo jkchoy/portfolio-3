@@ -1,0 +1,286 @@
+:root {
+
+  /* DEFINE BASE COLORS */
+  --color-graywhite: #ebeaea;
+  --color-white: #e7e7e7;
+  --color-offwhite: #c8c8c8;
+  --color-whitebox: #fdfdfd;
+  --color-black: #232323;
+  --color-black-80: rgb(0 0 0 / .8);
+
+  --color-grey-200: rgb(0 0 0 / .2);
+
+  /* main blue */
+  --color-blue-600: #2f455d;
+  --color-blue-900: #11212f;
+
+  --color-blue-gray: #74799F;
+
+  /* light background boxes & title heading box*/
+  --color-gray-100: #eef1f2;
+  /* buttons */
+  --color-gray-200: #D9D9D9;
+  /* subheader */
+  --color-gray-300: #b3b0b0ec;
+  --color-gray-600: #808392;
+
+  --color-salmon: #f6a68d;
+
+  --color-rose-400: #a36265;
+  --color-pink: #c75c7e;
+  --color-greendark: #06092c;
+  --color-teal: #35B6B9;
+
+  /* DEFINE SEMANTIC COLORS */
+  --color-body-background: var(--color-white);
+  --color-body-text: var(--color-black);
+  --color-body-text-dark: var(--color-blue-900);
+
+  --color-primary: var(--color-blue-400);
+  --color-primary-dark: var(--color-blue-900);
+  --color-secondary: var(--color-gray-600);
+
+  /* ACTION COLORS */
+  --color-links: var(--color-blue-900);
+  --color-links-hover: var(--color-gold-400);
+  --color-links-light: var(--color-gray-600);
+
+  /* SECTION SPECIFIC */
+  --color-siteheader-background: transparent;
+  --color-siteheader-links: var(--color-black-80);
+  --color-siteheader-hover: var(--color-gold-400);
+  --color-hero-background: var(--color-gray-100);
+  --color-sitefooter-background: transparent;
+
+  /* BORDERS */
+  --color-border: var(--color-grey-200);
+  --border-radius: 5px;
+  --border-thickness: .5px;
+
+  /* SIZING UNITS */
+  --unit-2xs: 0.25rem;
+  --unit-xs: 0.5rem;
+  --unit-s: 1rem;
+  --unit-m: 1.5rem;
+  --unit-l: 2rem;
+  --unit-xl: 3rem;
+  --unit-2xl: 4rem;
+  --unit-3xl: 6rem;
+  --container-width: 1100px;
+
+
+
+  /* IMPORT ADOBE FONTS */
+
+
+  /* <weight>: Use a value from 300 to 700 */
+  /* <uniquifier>: Use a unique and descriptive class name */
+
+  .roc-grotesque {
+    font-family: "Roc Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* .font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+
+
+  .elze {
+    font-family: "Elza", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
+}
+
+body {
+  background-color: var(--color-greendark);
+  color: var(--color-white);
+  font-family: 'roc-grotesk-wide', sans-serif;
+}
+
+.hero.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--color-hero-background); */
+  /* padding: var(--unit-2xl) var(--unit-xl);
+  gap: var(--unit-l); */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.brandstrategy-title.about-me {
+  font-family: 'roc-grotesk-wide', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: var(--unit-2xl);
+  color: var(--color-teal);
+}
+
+.about-portfolio {
+  display: grid;
+  grid-template-columns: 2em repeat(6, 1fr) 2em;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.hero-main-content {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+  z-index: 10;
+
+  /* border: 1px solid yellow; */
+}
+
+.about-title {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  /* border: 1px solid purple; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  font-family: 'roc-grotesk-wide', sans-serif;
+  max-inline-size: 20ch;
+
+  .jackie {
+    color: var(--color-teal);
+  }
+}
+
+.about-me {
+  grid-column: 6 / 8;
+  grid-row: 5 / 6;
+  z-index: 10;
+  color: var(--color-white);
+  font-size: 1em;
+  font-family: 'roc-grotesk', sans-serif;
+  font-weight: lighter;
+  /* display: none; */
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  grid-column: 4 / 7;
+  grid-row: 2 / 7;
+  /* display: none; */
+}
+
+.about-me-section {
+  margin-top: 3em
+}
+
+.about-me-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--unit-l);
+  color: var(--color-teal);
+  font-family: 'roc-grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+.row {
+  gap: var(--unit-xl);
+}
+
+.first-para {}
+
+.second-para {
+  margin-top: 4em;
+}
+
+.third-para {
+  margin-top: 4em;
+}
+
+.resume-section {
+  margin-top: 5em
+}
+
+.resume-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--unit-l);
+  color: var(--color-teal);
+  font-family: 'roc-grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+
+
+.job-title {
+  font-family: 'roc-grotesk', sans-serif;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
+.title-date {
+  font-family: 'elze', sans-serif;
+  font-weight: lighter;
+  color: var(--color-gray-200);
+  text-transform: capitalize;
+}
+
+.resume-info {
+  font-family: 'elze', sans-serif;
+  font-weight: lighter;
+  padding: .5em 0 0 .5em;
+}
+
+.certificates {
+  padding-bottom: 1em;
+}
+
+@media (width <=768px) {
+
+
+
+  .about-portfolio {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 50px);
+  }
+
+  .hero-main-content {
+    grid-column: 2 / 12;
+    grid-row: 6 / 11;
+    z-index: 20;
+  }
+
+  .about-title {
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .about-me {
+    grid-column: 2 / 12;
+    grid-row: 9 / 9;
+    z-index: 10;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    grid-column: 5 / 11;
+    grid-row: 2 / 7;
+  }
+
+  .hero-buttons {
+    grid-column: 2 / 7;
+    grid-row: 16 / 17;
+    z-index: 10;
+    margin-top: 0;
+    display: none;
+  }
+
+}
