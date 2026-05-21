@@ -3794,34 +3794,20 @@ section:has(.observe-me) {
   position: absolute;
   /* padding-bottom: 1em; */
   bottom: 0;
-  background: #fff;
-  right: 0;
-  left: 0;
-  height: auto;
-  width: 100%;
+  /* background: #fff; */
+  /* right: 0; */
+  /* left: 0; */
+  /* height: auto; */
+  /* width: 100%; */
   opacity: 0;
   transition: .5s ease;
-  display: flex;
-  justify-items: center;
+  /* display: flex; */
+  /* justify-items: center; */
   justify-content: center;
-  font-size: .7em;
-  text-align: center;
   /* border: 3px solid yellow; */
 
 }
 
-/* .overlay a {
-  text-decoration: none;
-}
-
-.overlay h4 {
-  color: #030B5F;
-}
-
-
-.overlay h4:hover {
-  color: #ab5e82;
-} */
 
 .image-hover:hover .overlay {
   opacity: 4;
