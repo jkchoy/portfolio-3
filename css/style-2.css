@@ -709,20 +709,6 @@ section {
 
 
 
-
-/* SITE FOOTER */
-.site-footer {
-  background-color: var(--color-sitefooter-background);
-  padding-block: var(--unit-2xl);
-  padding-inline: var(--unit-s);
-  border: 2px solid red;
-}
-
-/* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
-.site-footer:has(.container) {
-  padding-inline: 0;
-}
-
 /* ------------------
   UI COMPONENTS 
 --------------------- */
@@ -1650,128 +1636,8 @@ section:has(.observe-me) {
 
 
 
-/* @media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
-  }
-} */
-
-/* NEW FOOTER */
-
-/* .footer-container {
-  margin: 0 5em;
-  padding: var(--unit-xl);
-}
-
-.row.footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: var(--unit-l);
-
-} */
-
-.footer-category {
-  /* padding-top: 3.5em; */
-  padding-bottom: 1em;
-  text-transform: uppercase;
-}
-
-.footer-category-list {
-
-  a {
-    color: var(--color-pink);
-    font-size: 1em;
-    font-family: 'roc-grotesk', sans-serif;
-    text-decoration: none;
-    transition: color .2s ease-out;
-
-    &:hover {
-      color: var(--color-teal);
-    }
-  }
-}
 
 
-
-/* .site-footer {
-  margin-top: 6em;
-  background-color: var(--color-sitefooter-background);
-  padding-block: var(--unit-2xl);
-  padding-inline: var(--unit-s);
-}
-
-.site-footer ul {
-  margin: 0;
-  padding: 0;
-} */
-
-
-
-
-@media (width >=768px) {
-  .site-footer .footer-row {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    gap: 3em;
-    border: 3px solid yellow
-  }
-
-
-}
-
-.site-footer .footer-column {
-  margin-block-end: 4em;
-}
-
-/* two column row */
-@media (width > 768px) {
-  .row.two-mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--grid-gap);
-  }
-
-  .row.two-mobile.hours-time {
-    grid-template-columns: 100px 100px;
-  }
-
-}
-
-
-
-/* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
-.site-footer:has(.container) {
-  padding-inline: 0;
-}
-
-.copywrite {
-  padding-top: 3em;
-  font-size: .8em;
-
-}
-
-.coded-me {
-
-  display: flex;
-  justify-content: space-between;
-
-  p {
-    text-transform: uppercase;
-    font-family: 'roc-grotesk-wide', sans-serif;
-    font-weight: 200;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-.all-right {
-  margin-top: 0;
-}
-
-.hr-color {
-  border-color: var(--color-pink);
-  margin: .7em;
-}
 
 
 /* HERO SUBPAGE */

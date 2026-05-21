@@ -592,7 +592,6 @@
 }
 
 
-.swiper-wrapper {}
 
 /* MOVE SWIPER ARROWS OUTSIDE OF SWIPER */
 .swiper-button-prev,
@@ -1381,6 +1380,8 @@
 /* MOBILE */
 
 
+
+
 /* HERO SECTION */
 @media (width < 768px) {
 
@@ -1483,7 +1484,11 @@
 
     }
 
+
+
   }
+
+
 
   .brand-execution {
     padding: 1em 0;

@@ -1,0 +1,179 @@
+/* SITE FOOTER */
+.site-footer {
+  background-color: var(--color-sitefooter-background);
+  padding-block: var(--unit-2xl);
+  padding-inline: var(--unit-s);
+  /* border: 2px solid red; */
+
+
+}
+
+
+@media (width >=768px) {
+  .site-footer .footer-row {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5em;
+    /* border: 3px solid yellow; */
+    margin: 0 5em;
+  }
+
+
+}
+
+.footer-category {
+  padding-top: 3.5em;
+  padding-bottom: .5em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  font-family: 'roc-grotesk-wide', sans-serif;
+}
+
+.footer-category.subpage {
+  font-family: 'roc-grotesk-wide', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.footer-category-list {
+
+  a {
+    color: var(--color-pink);
+    font-size: 1em;
+    font-family: 'roc-grotesk', sans-serif;
+    text-decoration: none;
+    transition: color .2s ease-out;
+
+    &:hover {
+      color: var(--color-teal);
+    }
+  }
+}
+
+.footer-category-list.subpage {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* two column row */
+@media (width < 768px) {
+  .row.two-mobile {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2em;
+  }
+}
+
+/* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
+.site-footer:has(.container) {
+  padding-inline: 0;
+}
+
+.copywrite {
+  padding-top: 3em;
+  font-size: .8em;
+  margin: 0 7em 0 7em;
+}
+
+.coded-me {
+
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    text-transform: uppercase;
+    font-family: 'roc-grotesk-wide', sans-serif;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .9em;
+    font-weight: lighter;
+  }
+}
+
+/* 
+.site-code.passion {
+  color: var(--color-teal);
+}
+
+.site-code {
+  color: var(--color-teal);
+
+} */
+
+.all-right {
+  margin-top: 0;
+}
+
+.hr-color {
+  border-color: var(--color-pink);
+  margin: .7em;
+}
+
+
+
+
+/* two column row */
+@media (width > 768px) {
+  .row.two-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid orange; */
+    gap: 2em;
+  }
+
+
+}
+
+
+
+/* REMOVE FOOTER PADDING IF IT HAS A CONTAINER */
+.site-footer:has(.container) {
+  padding-inline: 0;
+}
+
+.coded-me {
+
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    text-transform: uppercase;
+    font-family: 'roc-grotesk-wide', sans-serif;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .9em;
+    font-weight: lighter;
+  }
+}
+
+
+.all-right {
+  margin-top: 0;
+}
+
+.hr-color {
+  border-color: var(--color-pink);
+  margin: .7em;
+}
+
+
+@media (width <=768px) {
+
+  .copywrite {
+    padding-top: 3em;
+    font-size: .8em;
+    margin: 0;
+    max-inline-size: 50ch;
+    /* border: 1px solid green; */
+  }
+
+  .footer-category.subpage {
+    margin-top: 2em;
+    padding-top: 0;
+  }
+
+
+}
