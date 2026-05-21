@@ -151,9 +151,11 @@ body {
   color: var(--color-white);
   font-family: 'roc-grotesk-wide', sans-serif;
   max-inline-size: 20ch;
+  padding-bottom: 2em;
 
   .jackie {
     color: var(--color-teal);
+
   }
 }
 
@@ -176,8 +178,14 @@ body {
   /* display: none; */
 }
 
+
 .about-me-section {
-  margin-top: 3em
+  margin-top: 3em;
+  padding: 0 2em 0 2em;
+}
+
+.resume-section {
+  padding: 0 2em 0 2em;
 }
 
 .about-me-title {
@@ -194,6 +202,39 @@ body {
   color: var(--color-gray-600);
   text-transform: uppercase;
   margin-bottom: .5em;
+}
+
+.button.aboutme {
+  padding: var(--unit-s) var(--unit-m);
+  margin-block: var(--unit-2xs);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-greendark);
+
+}
+
+.button.aboutme.email {
+  margin-left: 3em;
+}
+
+.button.aboutme:hover {
+  background-color: var(--color-pink);
+  padding: var(--unit-s) var(--unit-m);
+  margin-block: var(--unit-2xs);
+  display: inline-block;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.resume-buttons {
+  margin-top: 3em;
+  margin-bottom: 6em;
 }
 
 .row {
@@ -240,22 +281,24 @@ body {
 .resume-info {
   font-family: 'elze', sans-serif;
   font-weight: lighter;
-  padding: .5em 0 0 .5em;
+  padding: .5em 0 0 0;
 }
 
 .certificates {
   padding-bottom: 1em;
 }
 
+.tapeworm {
+  font-style: italic;
+}
+
 @media (width <=768px) {
-
-
 
   .about-portfolio {
     margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, 50px);
+    grid-template-rows: repeat(10, 50px);
   }
 
   .hero-main-content {
@@ -268,6 +311,7 @@ body {
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-bottom: 1em;
   }
 
   .about-me {
@@ -283,12 +327,20 @@ body {
     grid-row: 2 / 7;
   }
 
-  .hero-buttons {
-    grid-column: 2 / 7;
-    grid-row: 16 / 17;
-    z-index: 10;
-    margin-top: 0;
-    display: none;
+  .about-me-section {
+    margin-top: 5em
+  }
+
+  .second-para,
+  .third-para {
+    margin-top: 2em
+  }
+
+  .first-resume,
+  .second-resume,
+  .third-resume,
+  .resume-buttons {
+    margin-bottom: 5em;
   }
 
 }
